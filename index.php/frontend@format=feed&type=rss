@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Frontend - RibaFS</title>
+		<description><![CDATA[]]></description>
+		<link>http://backup/ribamar/index.php/frontend</link>
+		<lastBuildDate>Sat, 20 Apr 2024 23:40:43 -0300</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://backup/ribamar/index.php/frontend?format=feed&amp;type=rss"/>
+		<language>pt-br</language>
+		<item>
+			<title>Seu projeto precisa?</title>
+			<link>http://backup/ribamar/index.php/frontend/seu-projeto-precisa</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php/frontend/seu-projeto-precisa</guid>
+			<description><![CDATA[<p style="text-align: center;">É bom refletir antes de usar e usar somente se precisar.</p>
+<p> </p>
+<p><iframe style="display: table; margin-left: auto; margin-right: auto;" src="https://www.youtube.com/embed/pbLtPYsLkrg?si=K_wrfaqrHHp5qaYl" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>
+<p> </p>]]></description>
+			<category>Frontend</category>
+			<pubDate>Thu, 11 Apr 2024 20:36:14 -0300</pubDate>
+		</item>
+	</channel>
+</rss>

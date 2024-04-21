@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-br">
+	<title type="text">VPS - RibaFS</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="http://backup"/>
+	<id>http://backup/ribamar/index.php/vps2</id>
+	<updated>2024-04-20T23:40:43-03:00</updated>
+	<author>
+		<name>RibaFS Portal</name>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://backup/ribamar/index.php/vps2?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Restore CyberPanel Website</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/vps2/restore-cyberpanel-website"/>
+		<published>2024-01-27T03:48:21-03:00</published>
+		<updated>2024-01-27T03:48:21-03:00</updated>
+		<id>http://backup/ribamar/index.php/vps2/restore-cyberpanel-website</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/restore.png&quot; width=&quot;256&quot; height=&quot;256&quot; /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Restore website in cyberpanel without leaving the desktop&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;After creating a website backup on cyberpanel&lt;/p&gt;
+&lt;p&gt;Execute on your desktop&lt;/p&gt;
+&lt;p&gt;movebk&lt;/p&gt;
+&lt;p&gt;Now restore website on CyberPanel&lt;/p&gt;
+&lt;p&gt;Create &lt;strong&gt;movebk&lt;/strong&gt; like this:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo nano /usr/local/bin/movebk&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;#!/bin/sh&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;Enter exact domain/subdomain name to be moved to /home/backup&quot;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;read domain&lt;/em&gt;&lt;br /&gt;&lt;em&gt;FILE=/home/$domain/backup/*.tar.gz&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;Enter user password and enter. Then enter root password and enter&quot;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;ENTER to continue&quot;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;ssh -p 60022 -t ribafs@ribamar.net.br &quot;su root -c 'mv $FILE /home/backup'&quot;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;# credit: https://serverfault.com/questions/1111963/execute-root-commands-through-ssh-user&lt;/em&gt;&lt;br /&gt;&lt;br /&gt;&lt;em&gt;sudo chmod +x /usr/local/bin/movebk&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Obs: change user, domain and port to your script&lt;br /&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;# credit: &lt;a href=&quot;https://serverfault.com/questions/1111963/execute-root-commands-through-ssh-user&quot;&gt;https://serverfault.com/questions/1111963/execute-root-commands-through-ssh-user&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;If your not create regular user and use only root, change script to&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;echo &quot;Enter exactly domain/subdomain name to be moved to /home/backup&quot;&lt;br /&gt;read domain&lt;br /&gt;FILE=/home/$domain&lt;br /&gt;ssh -p 60022 -t root@ribamar.net.br &quot;su root -c 'mv $FILE/backup/*.tar.gz /home/backup'&quot;&lt;/p&gt;
+&lt;p&gt;Obs: Dont try this&lt;/p&gt;
+&lt;p&gt;Comments and suggestions below.&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/restore.png&quot; width=&quot;256&quot; height=&quot;256&quot; /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Restore website in cyberpanel without leaving the desktop&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;After creating a website backup on cyberpanel&lt;/p&gt;
+&lt;p&gt;Execute on your desktop&lt;/p&gt;
+&lt;p&gt;movebk&lt;/p&gt;
+&lt;p&gt;Now restore website on CyberPanel&lt;/p&gt;
+&lt;p&gt;Create &lt;strong&gt;movebk&lt;/strong&gt; like this:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo nano /usr/local/bin/movebk&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;#!/bin/sh&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;Enter exact domain/subdomain name to be moved to /home/backup&quot;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;read domain&lt;/em&gt;&lt;br /&gt;&lt;em&gt;FILE=/home/$domain/backup/*.tar.gz&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;Enter user password and enter. Then enter root password and enter&quot;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;ENTER to continue&quot;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;ssh -p 60022 -t ribafs@ribamar.net.br &quot;su root -c 'mv $FILE /home/backup'&quot;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;# credit: https://serverfault.com/questions/1111963/execute-root-commands-through-ssh-user&lt;/em&gt;&lt;br /&gt;&lt;br /&gt;&lt;em&gt;sudo chmod +x /usr/local/bin/movebk&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Obs: change user, domain and port to your script&lt;br /&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;# credit: &lt;a href=&quot;https://serverfault.com/questions/1111963/execute-root-commands-through-ssh-user&quot;&gt;https://serverfault.com/questions/1111963/execute-root-commands-through-ssh-user&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;If your not create regular user and use only root, change script to&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;echo &quot;Enter exactly domain/subdomain name to be moved to /home/backup&quot;&lt;br /&gt;read domain&lt;br /&gt;FILE=/home/$domain&lt;br /&gt;ssh -p 60022 -t root@ribamar.net.br &quot;su root -c 'mv $FILE/backup/*.tar.gz /home/backup'&quot;&lt;/p&gt;
+&lt;p&gt;Obs: Dont try this&lt;/p&gt;
+&lt;p&gt;Comments and suggestions below.&lt;/p&gt;</content>
+		<category term="VPS" />
+	</entry>
+	<entry>
+		<title>Usability and Security on VPS with CyberPanel</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/vps2/usability-and-security-on-vps-with-cyberpanel"/>
+		<published>2024-01-26T16:30:30-03:00</published>
+		<updated>2024-01-26T16:30:30-03:00</updated>
+		<id>http://backup/ribamar/index.php/vps2/usability-and-security-on-vps-with-cyberpanel</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/cp.png&quot; width=&quot;1185&quot; height=&quot;787&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Improving Usability and Security on VPS with CyberPanel&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Administering CyberPanel VPS with a regular user&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let's go&lt;/p&gt;
+&lt;p&gt;- Create common user on VPS (ribafs)&lt;br /&gt;- Add it to sudo so it has some privileges&lt;br /&gt;- Configure SSH so that it user can access the VPS through SSH&lt;br /&gt;- Remove root access to VPS via SSH&lt;/p&gt;
+&lt;p&gt;This way we can execute some tasks/commands with elevated privileges using sudo,&lt;br /&gt;Or directly access root, since he does not have access to SSH, but my user can allow him to connect, assume:&lt;/p&gt;
+&lt;p&gt;Most tasks can be done using&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo command&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;su and Enter&lt;/p&gt;
+&lt;p&gt;Provide the root password&lt;/p&gt;
+&lt;p&gt;I will now remove the snapshot created and create a new one with the current state, to predict, as problems with the permissions and owners of the VPS files have happened to me several times.&lt;/p&gt;
+&lt;p&gt;Then I will implement these activities:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ssh -p 60022 root@IP&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Create user (change it to yours)&lt;/p&gt;
+&lt;p&gt;adduser ribafs&lt;/p&gt;
+&lt;p&gt;Add to sudo&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;adduser ribafs sudo&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Add to SSH&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;adduser ribafs sudo&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Change SSH&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;nano /etc/ssh/sshd_config&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Add these two lines to the end of the file&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;PermitRootLogin no&lt;/em&gt;&lt;br /&gt;&lt;em&gt;AllowUsers ribafs&lt;br /&gt;&lt;br /&gt;&lt;/em&gt;Restart SSH&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;service ssh restart&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;See that we didn't change the port, we just added ribafs and removed root.&lt;br /&gt;Exit the server with&lt;/p&gt;
+&lt;p&gt;exit&lt;/p&gt;
+&lt;p&gt;Connect with the new user&lt;/p&gt;
+&lt;p&gt;ssh -p 60022 ribafs@IP&lt;/p&gt;
+&lt;p&gt;Try running&lt;/p&gt;
+&lt;p&gt;sudo clear&lt;/p&gt;
+&lt;p&gt;Note that it asks for the user's password and will keep it in cache for a long time so that the next time it runs without asking for the password.&lt;/p&gt;
+&lt;p&gt;Now try using the administrative panel and creating a backup of a website for testing.&lt;/p&gt;
+&lt;p&gt;So far so good with me. But you know, in case of a problem, while we get used to CyberPanel, we can use Snapshot Rollback and, as a last resort, reinstall the VPS.&lt;/p&gt;
+&lt;p&gt;Bonus&lt;/p&gt;
+&lt;p&gt;Backup to desktop with common user&lt;br /&gt;&lt;br /&gt;Allow regular user to backup all files from /home/backup to desktop&lt;/p&gt;
+&lt;p&gt;Connect to server&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ssh -p 60022 ribafs@IP&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;su&lt;/em&gt;&lt;br /&gt;&lt;em&gt;adduser ribafs root&lt;/em&gt;&lt;br /&gt;&lt;em&gt;chmod -R 775 /home/backup&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Create an alias&lt;em&gt; on the desktop (make the necessary adaptations for yourself)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;cd&lt;/em&gt;&lt;br /&gt;&lt;em&gt;nano .bashrc&lt;/em&gt;&lt;br /&gt;&lt;em&gt;alias backups=&quot;rsync -av --ignore-existing -e 'ssh -p 65522' ribafs@ribamar.net.br:/home/backup/* /backup/transp/backup/&quot;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;source .bashrc&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When running, backups will bring all files from /home/backupup to the desktop, but only those that do not exist on the desktop&lt;/p&gt;
+&lt;p&gt;Create the script on the server&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo nano /usr/local/bin/perms&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;#!/bin/sh&lt;/em&gt;&lt;br /&gt;&lt;em&gt;clear;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;&quot;;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;chown -R ribafs:root /home/backup;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;&quot;;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;Done!&quot;;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo chmod +x /usr/local/bin/perms&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Run with&lt;/p&gt;
+&lt;p&gt;su&lt;br /&gt;perms&lt;/p&gt;
+&lt;p&gt;Now you can check /home/backup which has new permissions on all files and is ready to be downloaded to the desktop.&lt;/p&gt;
+&lt;p&gt;Both the backup and restore of sites continue to work, which tells us that our changes did not affect the CP.&lt;/p&gt;
+&lt;p&gt;Remember that always before running backups, you need to run perms on the server&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Change CyberPanel URL to something like&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://painel.ribamar.net.br:8043/base/&quot;&gt;https://painel.ribamar.net.br:8043/base/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/cp.png&quot; width=&quot;1185&quot; height=&quot;787&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Improving Usability and Security on VPS with CyberPanel&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Administering CyberPanel VPS with a regular user&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let's go&lt;/p&gt;
+&lt;p&gt;- Create common user on VPS (ribafs)&lt;br /&gt;- Add it to sudo so it has some privileges&lt;br /&gt;- Configure SSH so that it user can access the VPS through SSH&lt;br /&gt;- Remove root access to VPS via SSH&lt;/p&gt;
+&lt;p&gt;This way we can execute some tasks/commands with elevated privileges using sudo,&lt;br /&gt;Or directly access root, since he does not have access to SSH, but my user can allow him to connect, assume:&lt;/p&gt;
+&lt;p&gt;Most tasks can be done using&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo command&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;su and Enter&lt;/p&gt;
+&lt;p&gt;Provide the root password&lt;/p&gt;
+&lt;p&gt;I will now remove the snapshot created and create a new one with the current state, to predict, as problems with the permissions and owners of the VPS files have happened to me several times.&lt;/p&gt;
+&lt;p&gt;Then I will implement these activities:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ssh -p 60022 root@IP&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Create user (change it to yours)&lt;/p&gt;
+&lt;p&gt;adduser ribafs&lt;/p&gt;
+&lt;p&gt;Add to sudo&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;adduser ribafs sudo&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Add to SSH&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;adduser ribafs sudo&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Change SSH&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;nano /etc/ssh/sshd_config&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Add these two lines to the end of the file&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;PermitRootLogin no&lt;/em&gt;&lt;br /&gt;&lt;em&gt;AllowUsers ribafs&lt;br /&gt;&lt;br /&gt;&lt;/em&gt;Restart SSH&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;service ssh restart&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;See that we didn't change the port, we just added ribafs and removed root.&lt;br /&gt;Exit the server with&lt;/p&gt;
+&lt;p&gt;exit&lt;/p&gt;
+&lt;p&gt;Connect with the new user&lt;/p&gt;
+&lt;p&gt;ssh -p 60022 ribafs@IP&lt;/p&gt;
+&lt;p&gt;Try running&lt;/p&gt;
+&lt;p&gt;sudo clear&lt;/p&gt;
+&lt;p&gt;Note that it asks for the user's password and will keep it in cache for a long time so that the next time it runs without asking for the password.&lt;/p&gt;
+&lt;p&gt;Now try using the administrative panel and creating a backup of a website for testing.&lt;/p&gt;
+&lt;p&gt;So far so good with me. But you know, in case of a problem, while we get used to CyberPanel, we can use Snapshot Rollback and, as a last resort, reinstall the VPS.&lt;/p&gt;
+&lt;p&gt;Bonus&lt;/p&gt;
+&lt;p&gt;Backup to desktop with common user&lt;br /&gt;&lt;br /&gt;Allow regular user to backup all files from /home/backup to desktop&lt;/p&gt;
+&lt;p&gt;Connect to server&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;ssh -p 60022 ribafs@IP&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;su&lt;/em&gt;&lt;br /&gt;&lt;em&gt;adduser ribafs root&lt;/em&gt;&lt;br /&gt;&lt;em&gt;chmod -R 775 /home/backup&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Create an alias&lt;em&gt; on the desktop (make the necessary adaptations for yourself)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;cd&lt;/em&gt;&lt;br /&gt;&lt;em&gt;nano .bashrc&lt;/em&gt;&lt;br /&gt;&lt;em&gt;alias backups=&quot;rsync -av --ignore-existing -e 'ssh -p 65522' ribafs@ribamar.net.br:/home/backup/* /backup/transp/backup/&quot;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;source .bashrc&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When running, backups will bring all files from /home/backupup to the desktop, but only those that do not exist on the desktop&lt;/p&gt;
+&lt;p&gt;Create the script on the server&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo nano /usr/local/bin/perms&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;#!/bin/sh&lt;/em&gt;&lt;br /&gt;&lt;em&gt;clear;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;&quot;;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;chown -R ribafs:root /home/backup;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;&quot;;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;Done!&quot;;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo chmod +x /usr/local/bin/perms&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Run with&lt;/p&gt;
+&lt;p&gt;su&lt;br /&gt;perms&lt;/p&gt;
+&lt;p&gt;Now you can check /home/backup which has new permissions on all files and is ready to be downloaded to the desktop.&lt;/p&gt;
+&lt;p&gt;Both the backup and restore of sites continue to work, which tells us that our changes did not affect the CP.&lt;/p&gt;
+&lt;p&gt;Remember that always before running backups, you need to run perms on the server&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Change CyberPanel URL to something like&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://painel.ribamar.net.br:8043/base/&quot;&gt;https://painel.ribamar.net.br:8043/base/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="VPS" />
+	</entry>
+	<entry>
+		<title>VPS Revenda</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/vps2/vps-revenda"/>
+		<published>2024-01-25T20:13:32-03:00</published>
+		<updated>2024-01-25T20:13:32-03:00</updated>
+		<id>http://backup/ribamar/index.php/vps2/vps-revenda</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/vpsrevenda.webp&quot; width=&quot;1200&quot; height=&quot;500&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Segundo treinamento free&lt;br&gt;&lt;br&gt;Revenda de Hospedagem com CyberPanel&lt;/strong&gt;&lt;br&gt;Para revenda, para uso pessoal ou para seus clientes&lt;/p&gt;
+&lt;p&gt;O CyberPanel é um painel web de administração de hospedagem, com muitos recursos e simples de usar. Moderno e comparado aos melhores da atualidade, como cPanel e Plex, com a grande vantagem de ser inteiramente free e sem restrições, permitindo criar ilimitados sites.&lt;/p&gt;
+&lt;p&gt;Para completar e aproveitar os recursos do CyberPanel estou trazendo uma hospedagem para VPS parruda e com preços imbatíveis, que nos oferece planos bem acessíveis. Para dar uma ideia, o plano mais simples vem com 4 cores, 6 GB de RAM, 100 GB de NVMe, 1 snapshot e 32 TB de transferência. Compare com os mais populares como DigitalOcean, Linode e Vultr. Os meus 3 sites estão no Contabo com este plano mais simples e administrados pelo CyberPanel.&lt;/p&gt;
+&lt;p&gt;Uma ferramenta gráfica tem a vantagem de exigir que gastemos menos tempo para aprender seu uso do que uma ferramenta texto. Acontece que ainda assim a ferramenta gráfica precisa que saibamos como usá-la e é para isso este treinamento.&lt;/p&gt;
+&lt;p&gt;Alguns tópicos do e-book/treinamento:&lt;/p&gt;
+&lt;p&gt;Primeira Parte - Contabo&lt;br&gt;- Criação e Configurações do VPS&lt;br&gt;– Instalação do Servidor&lt;/p&gt;
+&lt;p&gt;Segunda Parte - CyberPanel&lt;br&gt;– Instalação do CyberPanel num VPS do Contabo&lt;br&gt;– Criar Usuários e planos&lt;br&gt;- Criar Site com Joomla&lt;br&gt;– Criação de aplicativo com o Laravel 10&lt;br&gt;– Instalando o WordPress com um click&lt;br&gt;– Restaurar um backup do CyberPanel&lt;/p&gt;
+&lt;p&gt;Meus 3 sites e o painel administrativo com CyberPanel&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ribamar.net.br/&quot;&gt;https://ribamar.net.br/&lt;/a&gt; &lt;br&gt;&lt;a href=&quot;https://fatima.adv.br/&quot;&gt;https://fatima.adv.br/&lt;/a&gt; &lt;br&gt;&lt;a href=&quot;https://material.ribamar.net.br/&quot;&gt;https://material.ribamar.net.br/&lt;/a&gt;&lt;br&gt;&lt;span style=&quot;font-size: 1rem;&quot;&gt;&lt;a href=&quot;https://painel.ribamar.net.br:8090/base/&quot;&gt;https://painel.ribamar.net.br:8090/base/&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Estrutura do treinamento&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;- E-book com 85 página carregado de capturas (&lt;a href=&quot;http://backup/ribamar/vps/vpsrevenda.pdf&quot;&gt;https://ribamar.net.br/vps/vpsrevenda.pdf&lt;/a&gt;)&lt;br&gt;- Grupo no Facebook para tirar dúvidas (&lt;a href=&quot;https://www.facebook.com/groups/ribafsvps&quot;&gt;https://www.facebook.com/groups/ribafsvps&lt;/a&gt;)&lt;br&gt;- Meu site para dar avisos, emitir erratas, etc sobre o treinamento (&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/revenda-vps&quot;&gt;https://ribamar.net.br/index.php/treinamentos/revenda-vps&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Doações&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;O treinamento é inteiramente free, apenas caso sinta vontade pode fazer uma doação livre e de preferência, pequena:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/doacoes&quot;&gt;https://ribamar.net.br/index.php/treinamentos/doacoes&lt;/a&gt;&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/vpsrevenda.webp&quot; width=&quot;1200&quot; height=&quot;500&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Segundo treinamento free&lt;br&gt;&lt;br&gt;Revenda de Hospedagem com CyberPanel&lt;/strong&gt;&lt;br&gt;Para revenda, para uso pessoal ou para seus clientes&lt;/p&gt;
+&lt;p&gt;O CyberPanel é um painel web de administração de hospedagem, com muitos recursos e simples de usar. Moderno e comparado aos melhores da atualidade, como cPanel e Plex, com a grande vantagem de ser inteiramente free e sem restrições, permitindo criar ilimitados sites.&lt;/p&gt;
+&lt;p&gt;Para completar e aproveitar os recursos do CyberPanel estou trazendo uma hospedagem para VPS parruda e com preços imbatíveis, que nos oferece planos bem acessíveis. Para dar uma ideia, o plano mais simples vem com 4 cores, 6 GB de RAM, 100 GB de NVMe, 1 snapshot e 32 TB de transferência. Compare com os mais populares como DigitalOcean, Linode e Vultr. Os meus 3 sites estão no Contabo com este plano mais simples e administrados pelo CyberPanel.&lt;/p&gt;
+&lt;p&gt;Uma ferramenta gráfica tem a vantagem de exigir que gastemos menos tempo para aprender seu uso do que uma ferramenta texto. Acontece que ainda assim a ferramenta gráfica precisa que saibamos como usá-la e é para isso este treinamento.&lt;/p&gt;
+&lt;p&gt;Alguns tópicos do e-book/treinamento:&lt;/p&gt;
+&lt;p&gt;Primeira Parte - Contabo&lt;br&gt;- Criação e Configurações do VPS&lt;br&gt;– Instalação do Servidor&lt;/p&gt;
+&lt;p&gt;Segunda Parte - CyberPanel&lt;br&gt;– Instalação do CyberPanel num VPS do Contabo&lt;br&gt;– Criar Usuários e planos&lt;br&gt;- Criar Site com Joomla&lt;br&gt;– Criação de aplicativo com o Laravel 10&lt;br&gt;– Instalando o WordPress com um click&lt;br&gt;– Restaurar um backup do CyberPanel&lt;/p&gt;
+&lt;p&gt;Meus 3 sites e o painel administrativo com CyberPanel&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ribamar.net.br/&quot;&gt;https://ribamar.net.br/&lt;/a&gt; &lt;br&gt;&lt;a href=&quot;https://fatima.adv.br/&quot;&gt;https://fatima.adv.br/&lt;/a&gt; &lt;br&gt;&lt;a href=&quot;https://material.ribamar.net.br/&quot;&gt;https://material.ribamar.net.br/&lt;/a&gt;&lt;br&gt;&lt;span style=&quot;font-size: 1rem;&quot;&gt;&lt;a href=&quot;https://painel.ribamar.net.br:8090/base/&quot;&gt;https://painel.ribamar.net.br:8090/base/&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Estrutura do treinamento&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;- E-book com 85 página carregado de capturas (&lt;a href=&quot;http://backup/ribamar/vps/vpsrevenda.pdf&quot;&gt;https://ribamar.net.br/vps/vpsrevenda.pdf&lt;/a&gt;)&lt;br&gt;- Grupo no Facebook para tirar dúvidas (&lt;a href=&quot;https://www.facebook.com/groups/ribafsvps&quot;&gt;https://www.facebook.com/groups/ribafsvps&lt;/a&gt;)&lt;br&gt;- Meu site para dar avisos, emitir erratas, etc sobre o treinamento (&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/revenda-vps&quot;&gt;https://ribamar.net.br/index.php/treinamentos/revenda-vps&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Doações&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;O treinamento é inteiramente free, apenas caso sinta vontade pode fazer uma doação livre e de preferência, pequena:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/doacoes&quot;&gt;https://ribamar.net.br/index.php/treinamentos/doacoes&lt;/a&gt;&lt;/p&gt;</content>
+		<category term="VPS" />
+	</entry>
+	<entry>
+		<title>Hospedagem de Sites - 2</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/vps2/hospedagem-de-sites-2"/>
+		<published>2024-01-18T12:21:40-03:00</published>
+		<updated>2024-01-18T12:21:40-03:00</updated>
+		<id>http://backup/ribamar/index.php/vps2/hospedagem-de-sites-2</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/hospedagem.jpeg&quot; width=&quot;2560&quot; height=&quot;1280&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hospedagem de sites e aplicativos&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Quando começamos a programar para a web, geralmente instalamos em nosso desktop, se no windows o Xampp ou o Laragon. Se no linux o AMP ou EMP via sistema de pacotes.&lt;/p&gt;
+&lt;p&gt;Numa segunda fase usamos um serviço free para hospedar nosso site com PHP e MySQL. Recomendo o&lt;br /&gt;&lt;a href=&quot;https://www.freehostia.com/&quot;&gt;https://www.freehostia.com/&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Como os serviços free são bem restritos e se quizermos avanças contratamos uma hospedagem compartilhada. Aqui evitarei recomendar alguma e recomendo que se cadastre em algum grupo para receber dos colegas orientações.&lt;/p&gt;
+&lt;p&gt;Para ganhar mais recursos e liberdade precisamos estudar mais e aprender a gerenciar um VPS. Recomendarei os 3 que conheço e usei:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/&quot;&gt;https://www.digitalocean.com/&lt;/a&gt; &lt;br /&gt;&lt;a href=&quot;https://www.linode.com/&quot;&gt;https://www.linode.com/&lt;/a&gt; &lt;br /&gt;&lt;a href=&quot;https://www.vultr.com/&quot;&gt;https://www.vultr.com/&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Pelo visto são indicados para programadores web.&lt;/p&gt;
+&lt;p&gt;Também temos serviços nas nuvens, com recursos para grandes corporações, que geralmente oferecem um ano gratuito para que experimentemos. Alguns&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://aws.amazon.com/pt/free&quot;&gt;https://aws.amazon.com/pt/free&lt;/a&gt; &lt;br /&gt;&lt;a href=&quot;https://cloud.google.com/&quot;&gt;https://cloud.google.com/&lt;/a&gt; &lt;br /&gt;&lt;a href=&quot;https://azure.microsoft.com/pt-br/free/&quot;&gt;https://azure.microsoft.com/pt-br/free/&lt;/a&gt; &lt;br /&gt;&lt;a href=&quot;https://www.oracle.com/br/cloud/free/&quot;&gt;https://www.oracle.com/br/cloud/free/&lt;/a&gt; &lt;br /&gt;    &lt;br /&gt;Existem empresas e órgãos públicos que têm seus próprios servidores.&lt;br /&gt;Referência&lt;br /&gt;&lt;a href=&quot;https://kevinsguides.com/guides/webdev/hosting/selectinghosts&quot;&gt;https://kevinsguides.com/guides/webdev/hosting/selectinghosts&lt;/a&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/hospedagem.jpeg&quot; width=&quot;2560&quot; height=&quot;1280&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hospedagem de sites e aplicativos&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Quando começamos a programar para a web, geralmente instalamos em nosso desktop, se no windows o Xampp ou o Laragon. Se no linux o AMP ou EMP via sistema de pacotes.&lt;/p&gt;
+&lt;p&gt;Numa segunda fase usamos um serviço free para hospedar nosso site com PHP e MySQL. Recomendo o&lt;br /&gt;&lt;a href=&quot;https://www.freehostia.com/&quot;&gt;https://www.freehostia.com/&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Como os serviços free são bem restritos e se quizermos avanças contratamos uma hospedagem compartilhada. Aqui evitarei recomendar alguma e recomendo que se cadastre em algum grupo para receber dos colegas orientações.&lt;/p&gt;
+&lt;p&gt;Para ganhar mais recursos e liberdade precisamos estudar mais e aprender a gerenciar um VPS. Recomendarei os 3 que conheço e usei:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/&quot;&gt;https://www.digitalocean.com/&lt;/a&gt; &lt;br /&gt;&lt;a href=&quot;https://www.linode.com/&quot;&gt;https://www.linode.com/&lt;/a&gt; &lt;br /&gt;&lt;a href=&quot;https://www.vultr.com/&quot;&gt;https://www.vultr.com/&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Pelo visto são indicados para programadores web.&lt;/p&gt;
+&lt;p&gt;Também temos serviços nas nuvens, com recursos para grandes corporações, que geralmente oferecem um ano gratuito para que experimentemos. Alguns&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://aws.amazon.com/pt/free&quot;&gt;https://aws.amazon.com/pt/free&lt;/a&gt; &lt;br /&gt;&lt;a href=&quot;https://cloud.google.com/&quot;&gt;https://cloud.google.com/&lt;/a&gt; &lt;br /&gt;&lt;a href=&quot;https://azure.microsoft.com/pt-br/free/&quot;&gt;https://azure.microsoft.com/pt-br/free/&lt;/a&gt; &lt;br /&gt;&lt;a href=&quot;https://www.oracle.com/br/cloud/free/&quot;&gt;https://www.oracle.com/br/cloud/free/&lt;/a&gt; &lt;br /&gt;    &lt;br /&gt;Existem empresas e órgãos públicos que têm seus próprios servidores.&lt;br /&gt;Referência&lt;br /&gt;&lt;a href=&quot;https://kevinsguides.com/guides/webdev/hosting/selectinghosts&quot;&gt;https://kevinsguides.com/guides/webdev/hosting/selectinghosts&lt;/a&gt; &lt;/p&gt;</content>
+		<category term="VPS" />
+	</entry>
+	<entry>
+		<title>Hospedagem de Sites</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/vps2/hospedagem-de-sites"/>
+		<published>2024-01-16T21:50:49-03:00</published>
+		<updated>2024-01-16T21:50:49-03:00</updated>
+		<id>http://backup/ribamar/index.php/vps2/hospedagem-de-sites</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/hospedagem.jpeg&quot; width=&quot;2560&quot; height=&quot;1280&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hospedagem se sites&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Os principais tipos de hospedagem usadas por programadores para hospedar seus sites e aplicativos e de seus clientes, que conheço, são a hospedagem compartilhada (a mais comum, especialmente para iniciantes e para quem quer ter pouco trabalho) e a VPS, que não é tão comum, visto que exige mais conhecimento e trabalho por parte de quem a administra.&lt;/p&gt;
+&lt;p&gt;A hospedagem compartilhada é o tipo de serviço que nos entrega um servidor com um painel administrativo bem amigável, em geral o cPanel, já com praticamente tudo instalado e configurado: MySQL, Apache e PHP em várias versões e extensões.&lt;br /&gt;Já a hospedagem tipo VPS o serviço nos entrega apenas um servidor (distribuição linux sob a nossa escolha), mas cabe a nós a instalação de um firewall e liberação de portas, configuração do SSH, instalação do MySQL, Apache, PHP, etc. Acontece que no VPS podemos instalar o SGBD PostgreSQL, coisa rara em hospedagem compartilhada e quando oferece não entende. Também podemos instalar o Nginx que geralmente não é encontrado nas hospedagens compartilhadas. Podemos instalar qualquer extensão do PHP que desejamos. Como em um VPS quem controla é você, então poderá instalar o que quizer.&lt;br /&gt;Existem outros tipos de hospedagens menos populares: cloud, dedicado, particupar,...&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resumindo: &lt;/strong&gt;&lt;br /&gt;- a compartilhada é para quem está começando e/ou não quer ter muito trabalho na administração.&lt;br /&gt;- a VPS requer mais conhecimento e disposição para administrar o servidor. Por outro lado seu conhecimento e experiência irá valorizá-lo no mercado de trabalho.&lt;/p&gt;
+&lt;p&gt;Se acredita que VPS é pra você e deseja usar mas ainda não conhece, pode começar com este treinamento grauito:&lt;br /&gt;&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/em-breve/comecando&quot;&gt;https://ribamar.net.br/index.php/treinamentos/em-breve/comecando&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/hospedagem.jpeg&quot; width=&quot;2560&quot; height=&quot;1280&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hospedagem se sites&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Os principais tipos de hospedagem usadas por programadores para hospedar seus sites e aplicativos e de seus clientes, que conheço, são a hospedagem compartilhada (a mais comum, especialmente para iniciantes e para quem quer ter pouco trabalho) e a VPS, que não é tão comum, visto que exige mais conhecimento e trabalho por parte de quem a administra.&lt;/p&gt;
+&lt;p&gt;A hospedagem compartilhada é o tipo de serviço que nos entrega um servidor com um painel administrativo bem amigável, em geral o cPanel, já com praticamente tudo instalado e configurado: MySQL, Apache e PHP em várias versões e extensões.&lt;br /&gt;Já a hospedagem tipo VPS o serviço nos entrega apenas um servidor (distribuição linux sob a nossa escolha), mas cabe a nós a instalação de um firewall e liberação de portas, configuração do SSH, instalação do MySQL, Apache, PHP, etc. Acontece que no VPS podemos instalar o SGBD PostgreSQL, coisa rara em hospedagem compartilhada e quando oferece não entende. Também podemos instalar o Nginx que geralmente não é encontrado nas hospedagens compartilhadas. Podemos instalar qualquer extensão do PHP que desejamos. Como em um VPS quem controla é você, então poderá instalar o que quizer.&lt;br /&gt;Existem outros tipos de hospedagens menos populares: cloud, dedicado, particupar,...&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resumindo: &lt;/strong&gt;&lt;br /&gt;- a compartilhada é para quem está começando e/ou não quer ter muito trabalho na administração.&lt;br /&gt;- a VPS requer mais conhecimento e disposição para administrar o servidor. Por outro lado seu conhecimento e experiência irá valorizá-lo no mercado de trabalho.&lt;/p&gt;
+&lt;p&gt;Se acredita que VPS é pra você e deseja usar mas ainda não conhece, pode começar com este treinamento grauito:&lt;br /&gt;&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/em-breve/comecando&quot;&gt;https://ribamar.net.br/index.php/treinamentos/em-breve/comecando&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="VPS" />
+	</entry>
+	<entry>
+		<title>Começando o treinamento</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/vps2/comecando"/>
+		<published>2024-01-16T19:28:55-03:00</published>
+		<updated>2024-01-16T19:28:55-03:00</updated>
+		<id>http://backup/ribamar/index.php/vps2/comecando</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/vpsdebian.png&quot; width=&quot;900&quot; height=&quot;486&quot; /&gt;&lt;strong&gt;Estamos começando um treinamento em hospedagem tipo VPS com Debian&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Informações sobre hospedagens:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/em-breve/hospedagem-de-sites&quot;&gt;https://ribamar.net.br/index.php/treinamentos/em-breve/hospedagem-de-sites&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Este treinamento contará com:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Material de Apoio&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;- Um pequeno e-book contendo um guia prático com apenas 34 páginas de configuração de um servidor com Debian 12&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/vps/vps.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;e-book&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Grupo para tirar dúvidas&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;- Um grupo no Facebook para troca de ideias e tirar dúvidas sobre VPS &lt;a href=&quot;https://www.facebook.com/groups/ribafsvps&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.facebook.com/groups/ribafsvps&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Este treinamento é inteiramente gratuito.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Próximos Treinamentos&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;-  Revenda de VPS usando o CyberPanel (&lt;strong&gt;em elaboração&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;- Joomla - criando sites e extensões&lt;/p&gt;
+&lt;p&gt;- Laravel - criando aplicativos e programando&lt;/p&gt;
+&lt;p&gt;- PHP Orientado a Objetos&lt;/p&gt;
+&lt;p&gt;- quem sabe?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Encontrará sugestão para doação, mas isso é opcional.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/doacoes&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Doação&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/vpsdebian.png&quot; width=&quot;900&quot; height=&quot;486&quot; /&gt;&lt;strong&gt;Estamos começando um treinamento em hospedagem tipo VPS com Debian&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Informações sobre hospedagens:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/em-breve/hospedagem-de-sites&quot;&gt;https://ribamar.net.br/index.php/treinamentos/em-breve/hospedagem-de-sites&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Este treinamento contará com:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Material de Apoio&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;- Um pequeno e-book contendo um guia prático com apenas 34 páginas de configuração de um servidor com Debian 12&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/vps/vps.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;e-book&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Grupo para tirar dúvidas&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;- Um grupo no Facebook para troca de ideias e tirar dúvidas sobre VPS &lt;a href=&quot;https://www.facebook.com/groups/ribafsvps&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.facebook.com/groups/ribafsvps&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Este treinamento é inteiramente gratuito.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Próximos Treinamentos&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;-  Revenda de VPS usando o CyberPanel (&lt;strong&gt;em elaboração&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;- Joomla - criando sites e extensões&lt;/p&gt;
+&lt;p&gt;- Laravel - criando aplicativos e programando&lt;/p&gt;
+&lt;p&gt;- PHP Orientado a Objetos&lt;/p&gt;
+&lt;p&gt;- quem sabe?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Encontrará sugestão para doação, mas isso é opcional.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/doacoes&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Doação&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="VPS" />
+	</entry>
+</feed>

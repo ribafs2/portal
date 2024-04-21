@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Joomla - RibaFS</title>
+		<description><![CDATA[]]></description>
+		<link>http://backup/ribamar/index.php/joomla</link>
+		<lastBuildDate>Sat, 20 Apr 2024 23:40:43 -0300</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://backup/ribamar/index.php/joomla?format=feed&amp;type=rss"/>
+		<language>pt-br</language>
+		<item>
+			<title>Fabrik 4 E-book e Vídeo</title>
+			<link>http://backup/ribamar/index.php/joomla/fabrik-4-e-book</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php/joomla/fabrik-4-e-book</guid>
+			<description><![CDATA[<p> </p>
+<p><img class="float-none" style="display: block; margin-left: auto; margin-right: auto;" src="http://backup/ribamar/images/fabrik.png" width="440" height="161"></p>
+<p><strong>Pequeno e-book com 21 páginas sobre o Fabrik 4 com a criação de um pequeno aplicatino no Joomla 5.0.3</strong></p>
+<p><a href="http://backup/ribamar/down/joomla/fabrik4-ebook.pdf">Download</a></p>
+<p><strong>Finalmente, me rendi a produção de conteúdo em vídeo. Veja o que o vídeo fez com o e-book,apenas 22 páginas. Portanto feche os olhes para os probleminhas no vídeo e foque no conteúdo.<br></strong></p>
+<p><strong>Importante: </strong>como atualizar o e-book é bem mais simples que atualizar o vídeo, sempre estarei atualizando o e-book, portanto para algo mais atualizado veja este.</p>
+<p> </p>
+<p><iframe style="display: table; margin-left: auto; margin-right: auto;" src="https://www.youtube.com/embed/-WT_GMgbWGI?si=IndpCDuE3qPrVD0S" width="700" height="393" allowfullscreen="allowfullscreen"></iframe></p>
+<p> </p>]]></description>
+			<category>Joomla</category>
+			<pubDate>Sat, 30 Mar 2024 18:56:56 -0300</pubDate>
+		</item>
+		<item>
+			<title>Instalação do Joomla 5.0.3</title>
+			<link>http://backup/ribamar/index.php/joomla/instalacao-do-joomla-5-0-3</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php/joomla/instalacao-do-joomla-5-0-3</guid>
+			<description><![CDATA[<p> </p>
+<p><iframe style="display: table; margin-left: auto; margin-right: auto;" src="https://www.youtube.com/embed/1kizEVK9D_k?si=AdxIBHMiyt8QW4ND" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>
+<p> </p>
+<h3>Dois arquivos que podem ser úteis aos usuários do Linux</h3>
+<ul>
+<li><a href="http://backup/ribamar/down/joomla/vhost.txt">vhost</a></li>
+<li><a href="http://backup/ribamar/down/joomla/back.sh">back.sh</a> - permissões de pasta no vhost</li>
+</ul>]]></description>
+			<category>Joomla</category>
+			<pubDate>Sat, 30 Mar 2024 17:26:33 -0300</pubDate>
+		</item>
+		<item>
+			<title>pt-BR para Joomla 5.0.3</title>
+			<link>http://backup/ribamar/index.php/joomla/pt-br-para-joomla-5-0-3</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php/joomla/pt-br-para-joomla-5-0-3</guid>
+			<description><![CDATA[<p> </p>
+<p><img class="float-none" style="display: block; margin-left: auto; margin-right: auto;" src="http://backup/ribamar/images/ptbr.jpeg" width="637" height="358"></p>
+<h3 style="text-align: center;">Tradução para o pt-BR no Joomla 5.0.3</h3>
+<p>Como ainda não saiu a versão oficial da tradução do pt-BR para o Joomla 5, segue uma alternativa de ter o Joomla 5.0.3 em pt-BR.</p>
+<p>Baixar o pacote para o Joomla 4</p>
+<p><a href="https://downloads.joomla.org/language-packs/translations-joomla4">https://downloads.joomla.org/language-packs/translations-joomla4</a></p>
+<p>Especificamente daqui</p>
+<p><a href="https://downloads.joomla.org/language-packs/translations-joomla4/downloads/joomla4-portuguese-brazil/4-0-3-1">https://downloads.joomla.org/language-packs/translations-joomla4/downloads/joomla4-portuguese-brazil/4-0-3-1</a></p>
+<p>Descompactar e copiar as pastas pt-BR do pacote para o Joomla</p>
+<p>administrator - language - pt-BR</p>
+<p>api - language - pt-BR</p>
+<p>language - pt-BR</p>
+<p>Para as mesmas pastas do Joomla</p>
+<p>Entçao acessar o administrator do Joomla</p>
+<p>System - Discovery</p>
+<p>Selecionar tudo</p>
+<p>Discovery</p>
+<p>Após instalar tornar o pt-BR o idioma default para o site e paara o administrator.</p>
+<p>System - Languages</p>
+<p>Em Site clicar na coluna Default para pt-BR</p>
+<p>Selecionar Administrator (na combo com Site) e tornar pt-BR o default</p>
+<p>Caso chegue a faltar alguma palavra (até o momento não percebi) podemos criar uma substituição para ela.</p>
+<p>Sistema - Substituições de idioma</p>
+<p> </p>]]></description>
+			<category>Joomla</category>
+			<pubDate>Fri, 29 Mar 2024 20:02:39 -0300</pubDate>
+		</item>
+		<item>
+			<title>Update Joomla 4.4.2 to 5.0.2</title>
+			<link>http://backup/ribamar/index.php/joomla/updating-joomla-4-4-2-to-5-0-2</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php/joomla/updating-joomla-4-4-2-to-5-0-2</guid>
+			<description><![CDATA[<p> </p>
+<p><img class="float-none" style="display: block; margin-left: auto; margin-right: auto;" src="http://backup/ribamar/images/joomlaexts.jpeg" width="308" height="164"></p>
+<p><strong>Updating Joomla 4.4.2 to 5.0.2</strong></p>
+<h3><strong>Muito importante: quem estava causando o problema em meu site ao atualizar era o T4. Bastou que instalasse outro, no caso o Gantry e tornasse o Ganry o template default que tudo funcionou, sem remover nenhuma extensão.<br></strong></h3>
+<p>- I changed the template back to Cassiopeia<br>- I uninstalled all third-party extensions that I had installed (I will install them later)<br>- Removed cache<br>- I changed the default language of the site and admin to English<br>- System - Update - Joomla - Options - Update Channel - Joomla Next<br><br>Save &amp; Close<br><br>Scroll down and check if you need to answer any questions (if any, answer them first) - Update</p>
+<p>We then need to confirm that we have already made a complete backup of the website<br>I'm aware that a backup before any update is highly recommended. (click on the checkbox on the left)</p>
+<p>He suggests we read the article:<br><a href="https://docs.joomla.org/Portal:Upgrading_Versions">https://docs.joomla.org/Portal:Upgrading_Versions</a> </p>
+<p>Especially this one:<br>https://docs.joomla.org/Special:MyLanguage/Joomla_4.4.x_to_5.x_Planning_and_Upgrade_Step_by_Step</p>
+<p>See the note that to update to 5 we need to be already on 4.4<br>This guide assumes you are starting with Joomla 4.4.x. If you are on an earlier version, make sure you migrate or update to Joomla 4.4.x prior to upgrading to Joomla 5.x.</p>
+<p><strong>Start Update</strong></p>
+<p>After clicking the button above we will receive:</p>
+<p>Joomla Version Update Status<br>Notice Your site has been updated. Your Joomla version is now ‎5.0.2.</p>
+<p>But if we access the website and are still using a third-party extension, we can see the error:</p>
+<p><em>Joomla\CMS\Event\Module\ModuleListEvent::onSetModules(): Argument #1 ($value) must be of type array, null given, called in /home/familiafs.net.br/public_html/libraries/src/Event/ AbstractEvent.php on line 225</em></p>
+<p>But, see that we are still accessing the administrator without a problem. We need to uninstall all third-party extensions and then, when everything looks good, we can install again, but now in 5.0.2.</p>
+<p><strong>Obs</strong></p>
+<p>If it still doesn't work, check if any removed extensions left any tables in the database. If you left it, remove it.<br>It is important to create a database backup before removing extensions.</p>]]></description>
+			<category>Joomla</category>
+			<pubDate>Sat, 17 Feb 2024 10:43:28 -0300</pubDate>
+		</item>
+		<item>
+			<title>Joomla - sites e extensões</title>
+			<link>http://backup/ribamar/index.php/joomla/joomla-sites-e-extensoes</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php/joomla/joomla-sites-e-extensoes</guid>
+			<description><![CDATA[<p> </p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://backup/ribamar/images/joomlaexts.jpeg" width="747" height="398" /></p>
+<p><strong>Em Breve</strong></p>
+<p>Treinamento free sobre o CMS Joomla</p>
+<p>Com dicas para:</p>
+<p>- Criação de sites bonitos, ricos e de forma prática</p>
+<p>- Customização de extensões</p>
+<p>- Criação de extensões bem simples</p>
+<p> </p>]]></description>
+			<category>Joomla</category>
+			<pubDate>Tue, 16 Jan 2024 21:57:16 -0300</pubDate>
+		</item>
+	</channel>
+</rss>

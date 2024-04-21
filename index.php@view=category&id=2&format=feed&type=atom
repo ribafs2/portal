@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-br">
+	<title type="text">Início - RibaFS</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="http://backup"/>
+	<id>http://backup/ribamar/index.php</id>
+	<updated>2024-04-20T23:40:44-03:00</updated>
+	<author>
+		<name>RibaFS Portal</name>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://backup/ribamar/ribamar/index.php?view=category&amp;id=2&amp;format=feed&amp;type=atom"/>
+	<entry>
+		<title>Entrada</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/ribamar/index.php?view=article&amp;id=13&amp;format=feed&amp;type=atom&amp;catid=2"/>
+		<published>2023-12-07T15:46:57-03:00</published>
+		<updated>2023-12-07T15:46:57-03:00</updated>
+		<id>http://backup/ribamar/index.php?view=article&amp;id=13&amp;catid=2</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img src=&quot;http://backup/ribamar/images/entrada.jpg&quot; width=&quot;905&quot; height=&quot;603&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Crédito:&lt;br /&gt;&lt;/strong&gt;&lt;a href=&quot;https://blog.foxmanager.com.br/ti-qual-a-importancia-da-tecnologia-da-informacao-nas-empresas-negocios/&quot;&gt;https://blog.foxmanager.com.br/ti-qual-a-importancia-da-tecnologia-da-informacao-nas-empresas-negocios/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Este site destina-se ao compartilhamento de informações de TI em geral. Está apenas começando.&lt;/strong&gt;&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;http://backup/ribamar/images/entrada.jpg&quot; width=&quot;905&quot; height=&quot;603&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Crédito:&lt;br /&gt;&lt;/strong&gt;&lt;a href=&quot;https://blog.foxmanager.com.br/ti-qual-a-importancia-da-tecnologia-da-informacao-nas-empresas-negocios/&quot;&gt;https://blog.foxmanager.com.br/ti-qual-a-importancia-da-tecnologia-da-informacao-nas-empresas-negocios/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Este site destina-se ao compartilhamento de informações de TI em geral. Está apenas começando.&lt;/strong&gt;&lt;/p&gt;</content>
+		<category term="Genérica" />
+	</entry>
+	<entry>
+		<title>Início</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php"/>
+		<published>2023-10-25T20:13:51-03:00</published>
+		<updated>2023-10-25T20:13:51-03:00</updated>
+		<id>http://backup/ribamar/index.php</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/index.php/frontend&quot;&gt;Frontend&lt;/a&gt;  &lt;a href=&quot;http://backup/ribamar/index.php/joomla&quot;&gt;Joomla&lt;/a&gt;  &lt;a href=&quot;http://backup/ribamar/index.php/vps2&quot;&gt;VPS&lt;/a&gt;  &lt;a href=&quot;http://backup/ribamar/index.php/servidores&quot;&gt;Servidores&lt;/a&gt;  &lt;a href=&quot;http://backup/ribamar/index.php/contato&quot;&gt;Contato&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Este site destina-se ao compartilhamento de informações sobre TI em geral&lt;/strong&gt;&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/index.php/frontend&quot;&gt;Frontend&lt;/a&gt;  &lt;a href=&quot;http://backup/ribamar/index.php/joomla&quot;&gt;Joomla&lt;/a&gt;  &lt;a href=&quot;http://backup/ribamar/index.php/vps2&quot;&gt;VPS&lt;/a&gt;  &lt;a href=&quot;http://backup/ribamar/index.php/servidores&quot;&gt;Servidores&lt;/a&gt;  &lt;a href=&quot;http://backup/ribamar/index.php/contato&quot;&gt;Contato&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Este site destina-se ao compartilhamento de informações sobre TI em geral&lt;/strong&gt;&lt;/p&gt;</content>
+		<category term="Genérica" />
+	</entry>
+</feed>

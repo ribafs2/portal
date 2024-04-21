@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Joomla - RibaFS</title>
+		<description><![CDATA[]]></description>
+		<link>http://backup/ribamar/index.php/joomla/loja-virtual</link>
+		<lastBuildDate>Sat, 20 Apr 2024 23:40:44 -0300</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://backup/ribamar/index.php/joomla/loja-virtual?format=feed&amp;type=rss"/>
+		<language>pt-br</language>
+		<item>
+			<title>Ferramentas Auxiliares</title>
+			<link>http://backup/ribamar/index.php/joomla/loja-virtual/ferramentas-auxiliares</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php/joomla/loja-virtual/ferramentas-auxiliares</guid>
+			<description><![CDATA[<p> </p>
+<p> </p>
+<p><img class="float-none" style="display: block; margin-left: auto; margin-right: auto;" src="http://backup/ribamar/images/canivete.jpg" width="950" height="1000"></p>
+<p><strong>Ferramentas Auxiliares</strong></p>
+<p>Uso o CMS Joomla para criar sites, mas acontece de querer implementar um recurso para o qual não conheço uma extensão free.<br>Neste caso procuro algo em Javascript ou em PHP, que existe muito. </p>
+<p>Algo que me ajuda é a busca de projetos do Github</p>
+<p><a href="https://github.com/search">https://github.com/search</a> </p>
+<p>Quando encontro um projeto que me agrada eu crio um fork na minha conta do Github e faço alterações as vezes.</p>
+<p>renlote - Pesquisando encontrei este pequeno script que alterei para renomear todos os arquivos da pasta atual de acordo com uma extensão<br>roda no linux e no Debian no WSL2 do Windows<br>aqui o script:</p>
+<p><em>echo "Digite a extensão? Faça um backuup antes. Enter para continuar"</em><br><em>read ext</em><br><em>ls -v | cat -n | while read n f; do mv -n "$f" "$n.$ext"; done</em><br><em>echo "Concluído"</em></p>
+<p><br>Bulke-image-resize - redimensionara todas as imagens de uma pasta por uma extensão<br><a href="https://github.com/roytuts/php/tree/master/php-bulk-images-resize">https://github.com/roytuts/php/tree/master/php-bulk-images-resize</a> </p>
+<p>galeria-video-bs - Galeria de vídeos em lor usando bootstrap, portanto responsiva<br><a href="https://github.com/ribafs/video-gallery-with-bootstrap">https://github.com/ribafs/video-gallery-with-bootstrap</a> </p>
+<p>fileindex-php-bs - listagem de pastas com muitos e bons recursos, inclusive responsiva<br><a href="https://github.com/ribafs/SimplePHPFileIndexBS">https://github.com/ribafs/SimplePHPFileIndexBS</a> </p>
+<p>Atualmente é obrigatório que seja responsivo, pois a maioria dos usuários usa somente celular para ver os sites. <br>Neste caso o uso do bootstrap é uma boa.</p>
+<p><strong>Exemplo: </strong></p>
+<p>No caso eu customizo mudando o título, traduzo, etc.</p>
+<p>Para a galeria de vídeos criei um arquivo php para gerar a lista de vídeos:<br><a href="https://github.com/ribafs/video-gallery-with-bootstrap/blob/main/codegen.php">https://github.com/ribafs/video-gallery-with-bootstrap/blob/main/codegen.php</a> </p>
+<p>Mudei o SimplePHPFileIndexBS para que mostre por padrão apenas 10 arquivos por página. O original era 60.</p>
+<p> </p>]]></description>
+			<category>Loja Virtual</category>
+			<pubDate>Fri, 23 Feb 2024 08:03:56 -0300</pubDate>
+		</item>
+		<item>
+			<title>Projeto de criação de site</title>
+			<link>http://backup/ribamar/index.php/joomla/loja-virtual/projeto</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php/joomla/loja-virtual/projeto</guid>
+			<description><![CDATA[<h3>Projeto de criação de site</h3>
+<p><img class="float-none" style="display: block; margin-left: auto; margin-right: auto;" src="http://backup/ribamar/images/projeto.png" width="1200" height="675"></p>
+<p>Um projeto simples ppara auxiliar na criação de projetos de criação de site</p>
+<p>Criado com o LibreOffice</p>
+<p><a href="http://backup/ribamar/down/loja/projeto.odt">Projeto</a></p>
+<p> </p>]]></description>
+			<category>Loja Virtual</category>
+			<pubDate>Wed, 21 Feb 2024 17:44:23 -0300</pubDate>
+		</item>
+		<item>
+			<title>Modelo de Contrato</title>
+			<link>http://backup/ribamar/index.php/joomla/loja-virtual/modelo-de-contrato</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php/joomla/loja-virtual/modelo-de-contrato</guid>
+			<description><![CDATA[<p><img class="float-none" style="display: block; margin-left: auto; margin-right: auto;" src="http://backup/ribamar/images/contrato.jpg" width="1080" height="1080"></p>
+<p> </p>
+<p>Modelo simples de Contrato de criação de site</p>
+<p>Baixe e faça as devidas adaptações.</p>
+<p>Obs: o contrato está no formato do LibreOffice.</p>
+<p><a href="http://backup/ribamar/down/loja/contrato.odt">Contrato</a></p>
+<p> </p>
+<p> </p>]]></description>
+			<category>Loja Virtual</category>
+			<pubDate>Wed, 21 Feb 2024 17:32:51 -0300</pubDate>
+		</item>
+	</channel>
+</rss>

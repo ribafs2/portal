@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-br">
+	<title type="text">Servidores - RibaFS</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="http://backup"/>
+	<id>http://backup/ribamar/index.php/servidores/scripts</id>
+	<updated>2024-04-20T23:40:45-03:00</updated>
+	<author>
+		<name>RibaFS Portal</name>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://backup/ribamar/index.php/servidores/scripts?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Executar comando no servidor via SSH</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/servidores/scripts/executar-comando-no-servidor-com-ssh"/>
+		<published>2024-01-27T22:38:11-03:00</published>
+		<updated>2024-01-27T22:38:11-03:00</updated>
+		<id>http://backup/ribamar/index.php/servidores/scripts/executar-comando-no-servidor-com-ssh</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/ssh.webp&quot; width=&quot;900&quot; height=&quot;560&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Executar comandos no servidor estando no desktop via SSH&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Há algum tempo procurei por uma solução semelhane mas não encontrei.&lt;br /&gt;Agora rpecisei novamente e encontrei no Serverfault.&lt;/p&gt;
+&lt;p&gt;Criar o script abaixo no /usr/local/bin do desktop para que fique no path e possamos executá-lo de qualquer lugar. Isso se justifica apenas se for usar o script com frequência.&lt;/p&gt;
+&lt;p&gt;Caso queira executar o script perms no servidor...&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo nano /usr/local/bin/runssh&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;#!/bin/sh&lt;/em&gt;&lt;br /&gt;&lt;em&gt;ssh -p 60022 -t ribafs@ribamar.net.br &quot;su root -c '/usr/local/bin/perms'&quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo chmod +x /usr/local/bin/runssh&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;# crédito:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://serverfault.com/questions/1111963/execute-root-commands-through-ssh-user&quot;&gt;https://serverfault.com/questions/1111963/execute-root-commands-through-ssh-user&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/ssh.webp&quot; width=&quot;900&quot; height=&quot;560&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Executar comandos no servidor estando no desktop via SSH&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Há algum tempo procurei por uma solução semelhane mas não encontrei.&lt;br /&gt;Agora rpecisei novamente e encontrei no Serverfault.&lt;/p&gt;
+&lt;p&gt;Criar o script abaixo no /usr/local/bin do desktop para que fique no path e possamos executá-lo de qualquer lugar. Isso se justifica apenas se for usar o script com frequência.&lt;/p&gt;
+&lt;p&gt;Caso queira executar o script perms no servidor...&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo nano /usr/local/bin/runssh&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;#!/bin/sh&lt;/em&gt;&lt;br /&gt;&lt;em&gt;ssh -p 60022 -t ribafs@ribamar.net.br &quot;su root -c '/usr/local/bin/perms'&quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo chmod +x /usr/local/bin/runssh&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;# crédito:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://serverfault.com/questions/1111963/execute-root-commands-through-ssh-user&quot;&gt;https://serverfault.com/questions/1111963/execute-root-commands-through-ssh-user&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="Scripts" />
+	</entry>
+</feed>

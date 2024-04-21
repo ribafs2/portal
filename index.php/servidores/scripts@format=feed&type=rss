@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Servidores - RibaFS</title>
+		<description><![CDATA[]]></description>
+		<link>http://backup/ribamar/index.php/servidores/scripts</link>
+		<lastBuildDate>Sat, 20 Apr 2024 23:40:45 -0300</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://backup/ribamar/index.php/servidores/scripts?format=feed&amp;type=rss"/>
+		<language>pt-br</language>
+		<item>
+			<title>Executar comando no servidor via SSH</title>
+			<link>http://backup/ribamar/index.php/servidores/scripts/executar-comando-no-servidor-com-ssh</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php/servidores/scripts/executar-comando-no-servidor-com-ssh</guid>
+			<description><![CDATA[<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://backup/ribamar/images/ssh.webp" width="900" height="560" /></p>
+<p><strong>Executar comandos no servidor estando no desktop via SSH</strong></p>
+<p>Há algum tempo procurei por uma solução semelhane mas não encontrei.<br />Agora rpecisei novamente e encontrei no Serverfault.</p>
+<p>Criar o script abaixo no /usr/local/bin do desktop para que fique no path e possamos executá-lo de qualquer lugar. Isso se justifica apenas se for usar o script com frequência.</p>
+<p>Caso queira executar o script perms no servidor...</p>
+<p><em>sudo nano /usr/local/bin/runssh</em></p>
+<p><em>#!/bin/sh</em><br /><em>ssh -p 60022 -t ribafs@ribamar.net.br "su root -c '/usr/local/bin/perms'"</em></p>
+<p><em>sudo chmod +x /usr/local/bin/runssh</em></p>
+<p># crédito:</p>
+<p><a href="https://serverfault.com/questions/1111963/execute-root-commands-through-ssh-user">https://serverfault.com/questions/1111963/execute-root-commands-through-ssh-user</a></p>
+<p> </p>]]></description>
+			<category>Scripts</category>
+			<pubDate>Sat, 27 Jan 2024 22:38:11 -0300</pubDate>
+		</item>
+	</channel>
+</rss>

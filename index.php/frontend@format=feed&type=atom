@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-br">
+	<title type="text">Frontend - RibaFS</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="http://backup"/>
+	<id>http://backup/ribamar/index.php/frontend</id>
+	<updated>2024-04-20T23:40:43-03:00</updated>
+	<author>
+		<name>RibaFS Portal</name>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://backup/ribamar/index.php/frontend?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Seu projeto precisa?</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/frontend/seu-projeto-precisa"/>
+		<published>2024-04-11T20:36:14-03:00</published>
+		<updated>2024-04-11T20:36:14-03:00</updated>
+		<id>http://backup/ribamar/index.php/frontend/seu-projeto-precisa</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p style=&quot;text-align: center;&quot;&gt;É bom refletir antes de usar e usar somente se precisar.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;iframe style=&quot;display: table; margin-left: auto; margin-right: auto;&quot; src=&quot;https://www.youtube.com/embed/pbLtPYsLkrg?si=K_wrfaqrHHp5qaYl&quot; width=&quot;560&quot; height=&quot;314&quot; allowfullscreen=&quot;allowfullscreen&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p style=&quot;text-align: center;&quot;&gt;É bom refletir antes de usar e usar somente se precisar.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;iframe style=&quot;display: table; margin-left: auto; margin-right: auto;&quot; src=&quot;https://www.youtube.com/embed/pbLtPYsLkrg?si=K_wrfaqrHHp5qaYl&quot; width=&quot;560&quot; height=&quot;314&quot; allowfullscreen=&quot;allowfullscreen&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="Frontend" />
+	</entry>
+</feed>

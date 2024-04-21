@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-br">
+	<title type="text">Início - RibaFS</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="http://backup"/>
+	<id>http://backup/ribamar/index.php</id>
+	<updated>2024-04-20T23:40:45-03:00</updated>
+	<author>
+		<name>RibaFS Portal</name>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://backup/ribamar/ribamar/index.php?view=category&amp;id=54&amp;format=feed&amp;type=atom"/>
+	<entry>
+		<title>Gravação de Vídeos</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/ribamar/index.php?view=article&amp;id=161&amp;format=feed&amp;type=atom&amp;catid=54"/>
+		<published>2024-03-30T17:51:13-03:00</published>
+		<updated>2024-03-30T17:51:13-03:00</updated>
+		<id>http://backup/ribamar/index.php?view=article&amp;id=161&amp;catid=54</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Playlist no Youtube&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLOZFjWTkIBhWDS0uy_HEFdSLxzSgyvqmp&quot;&gt;https://www.youtube.com/playlist?list=PLOZFjWTkIBhWDS0uy_HEFdSLxzSgyvqmp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Playlist no Youtube&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLOZFjWTkIBhWDS0uy_HEFdSLxzSgyvqmp&quot;&gt;https://www.youtube.com/playlist?list=PLOZFjWTkIBhWDS0uy_HEFdSLxzSgyvqmp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="Videos" />
+	</entry>
+	<entry>
+		<title>Edição com Shotcut</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/ribamar/index.php?view=article&amp;id=158&amp;format=feed&amp;type=atom&amp;catid=54"/>
+		<published>2024-03-29T10:30:03-03:00</published>
+		<updated>2024-03-29T10:30:03-03:00</updated>
+		<id>http://backup/ribamar/index.php?view=article&amp;id=158&amp;catid=54</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;float-none&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/shotcut.png&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;Apresentação base do vídeo de edição.&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/down/videos/RoteiroVideosEdicao.pdf&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Importante: ao finalizar a edição deve exportar o vídeo resultante:&lt;/p&gt;
+&lt;p&gt;Arquivo - Exportar - Vídeo&lt;/p&gt;
+&lt;p&gt;Então observe o painel de Edição da direita&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;float-none&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/edicaoshotcut.png&quot; width=&quot;466&quot; height=&quot;218&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Veja que auando ele concluir mostrará um pequeno tick verde à esquerda do nome.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Capcut&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Outra ferramenta muito boa e parecida com o Shotcut é o Capcut, embora não tenha versão para Linux. Sua versão para Windows acho até um pouco maiis prática que o Shotcut.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Com versão até para celular:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.capcut.com/pt-br/&quot;&gt;https://www.capcut.com/pt-br/&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Windows&lt;br&gt;&lt;a href=&quot;https://www.capcut.com/download-guidance?download_url=https://lf16-capcut.faceulv.com/obj/capcutpc-packages-us/installer/capcut_capcutpc_0_1.2.6_installer.exe&amp;amp;currentPage=article_page&quot;&gt;https://www.capcut.com/download-guidance?download_url=https://lf16-capcut.faceulv.com/obj/capcutpc-packages-us/installer/capcut_capcutpc_0_1.2.6_installer.exe&amp;amp;currentPage=article_page&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Celular&lt;br&gt;&lt;a href=&quot;https://www.capcut.com/pt-br/tools/video-editing-app&quot;&gt;https://www.capcut.com/pt-br/tools/video-editing-app&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=QJMuWByIzQY&quot;&gt;https://www.youtube.com/watch?v=QJMuWByIzQY&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=MGM-pAo8ar4&quot;&gt;https://www.youtube.com/watch?v=MGM-pAo8ar4&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=k_QKYNIrwpA&quot;&gt;https://www.youtube.com/watch?v=k_QKYNIrwpA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;float-none&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/shotcut.png&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;Apresentação base do vídeo de edição.&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/down/videos/RoteiroVideosEdicao.pdf&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Importante: ao finalizar a edição deve exportar o vídeo resultante:&lt;/p&gt;
+&lt;p&gt;Arquivo - Exportar - Vídeo&lt;/p&gt;
+&lt;p&gt;Então observe o painel de Edição da direita&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;float-none&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/edicaoshotcut.png&quot; width=&quot;466&quot; height=&quot;218&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Veja que auando ele concluir mostrará um pequeno tick verde à esquerda do nome.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Capcut&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Outra ferramenta muito boa e parecida com o Shotcut é o Capcut, embora não tenha versão para Linux. Sua versão para Windows acho até um pouco maiis prática que o Shotcut.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Com versão até para celular:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.capcut.com/pt-br/&quot;&gt;https://www.capcut.com/pt-br/&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Windows&lt;br&gt;&lt;a href=&quot;https://www.capcut.com/download-guidance?download_url=https://lf16-capcut.faceulv.com/obj/capcutpc-packages-us/installer/capcut_capcutpc_0_1.2.6_installer.exe&amp;amp;currentPage=article_page&quot;&gt;https://www.capcut.com/download-guidance?download_url=https://lf16-capcut.faceulv.com/obj/capcutpc-packages-us/installer/capcut_capcutpc_0_1.2.6_installer.exe&amp;amp;currentPage=article_page&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Celular&lt;br&gt;&lt;a href=&quot;https://www.capcut.com/pt-br/tools/video-editing-app&quot;&gt;https://www.capcut.com/pt-br/tools/video-editing-app&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=QJMuWByIzQY&quot;&gt;https://www.youtube.com/watch?v=QJMuWByIzQY&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=MGM-pAo8ar4&quot;&gt;https://www.youtube.com/watch?v=MGM-pAo8ar4&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=k_QKYNIrwpA&quot;&gt;https://www.youtube.com/watch?v=k_QKYNIrwpA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="Videos" />
+	</entry>
+</feed>

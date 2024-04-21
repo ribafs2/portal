@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-br">
+	<title type="text">Servidores - RibaFS</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="http://backup"/>
+	<id>http://backup/ribamar/index.php/servidores</id>
+	<updated>2024-04-20T23:40:43-03:00</updated>
+	<author>
+		<name>RibaFS Portal</name>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://backup/ribamar/index.php/servidores?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Permissões web</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/servidores/permisisoes-web"/>
+		<published>2024-01-08T21:11:48-03:00</published>
+		<updated>2024-01-08T21:11:48-03:00</updated>
+		<id>http://backup/ribamar/index.php/servidores/permisisoes-web</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;div class=&quot;_1mf _1mj&quot; data-offset-key=&quot;a10mu-0-0&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot; data-offset-key=&quot;a10mu-0-0&quot;&gt;&lt;span data-text=&quot;true&quot;&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/permissoes.png&quot; width=&quot;800&quot; height=&quot;442&quot; /&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;_1mf _1mj&quot; data-offset-key=&quot;a10mu-0-0&quot;&gt; &lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Adicionar usuário administrador ao grupo do servidor web&lt;/strong&gt;&lt;br /&gt;Meu user - ribafs&lt;br /&gt;sudo adduser ribafs www-data&lt;/p&gt;
+&lt;p&gt;cd&lt;br /&gt;nano /home/ribafs/perms&lt;/p&gt;
+&lt;p&gt;#!/bin/sh&lt;br /&gt;clear;&lt;br /&gt;echo &quot;Aguarde enquanto configuro as permissões do /var/www/$1&quot;;&lt;br /&gt;echo &quot;&quot;;&lt;br /&gt;chown -R ribafs:www-data /var/www/$1;&lt;br /&gt;find /var/www/$1 -type d -exec chmod 775 {} \;&lt;br /&gt;find /var/www/$1 -type f -exec chmod 664 {} \;&lt;br /&gt;echo &quot;&quot;;&lt;br /&gt;echo &quot;Concluído!&quot;;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Varrer toda a pasta /var/www&lt;/strong&gt;&lt;br /&gt;sudo sh perms&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Varrer somente uma subpasta&lt;/strong&gt;&lt;br /&gt;sudo sh perms subpasta&lt;/p&gt;
+&lt;p&gt;ls -la /var/www/&lt;/p&gt;</summary>
+		<content type="html">&lt;div class=&quot;_1mf _1mj&quot; data-offset-key=&quot;a10mu-0-0&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot; data-offset-key=&quot;a10mu-0-0&quot;&gt;&lt;span data-text=&quot;true&quot;&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/permissoes.png&quot; width=&quot;800&quot; height=&quot;442&quot; /&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;_1mf _1mj&quot; data-offset-key=&quot;a10mu-0-0&quot;&gt; &lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Adicionar usuário administrador ao grupo do servidor web&lt;/strong&gt;&lt;br /&gt;Meu user - ribafs&lt;br /&gt;sudo adduser ribafs www-data&lt;/p&gt;
+&lt;p&gt;cd&lt;br /&gt;nano /home/ribafs/perms&lt;/p&gt;
+&lt;p&gt;#!/bin/sh&lt;br /&gt;clear;&lt;br /&gt;echo &quot;Aguarde enquanto configuro as permissões do /var/www/$1&quot;;&lt;br /&gt;echo &quot;&quot;;&lt;br /&gt;chown -R ribafs:www-data /var/www/$1;&lt;br /&gt;find /var/www/$1 -type d -exec chmod 775 {} \;&lt;br /&gt;find /var/www/$1 -type f -exec chmod 664 {} \;&lt;br /&gt;echo &quot;&quot;;&lt;br /&gt;echo &quot;Concluído!&quot;;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Varrer toda a pasta /var/www&lt;/strong&gt;&lt;br /&gt;sudo sh perms&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Varrer somente uma subpasta&lt;/strong&gt;&lt;br /&gt;sudo sh perms subpasta&lt;/p&gt;
+&lt;p&gt;ls -la /var/www/&lt;/p&gt;</content>
+		<category term="Servidores" />
+	</entry>
+</feed>

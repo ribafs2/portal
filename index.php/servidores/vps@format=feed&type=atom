@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-br">
+	<title type="text">Servidores - RibaFS</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="http://backup"/>
+	<id>http://backup/ribamar/index.php/servidores/vps</id>
+	<updated>2024-04-20T23:40:45-03:00</updated>
+	<author>
+		<name>RibaFS Portal</name>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://backup/ribamar/index.php/servidores/vps?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Servidor no DigitalOcean</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/servidores/vps/servidor-no-digitalocean"/>
+		<published>2024-01-04T20:17:25-03:00</published>
+		<updated>2024-01-04T20:17:25-03:00</updated>
+		<id>http://backup/ribamar/index.php/servidores/vps/servidor-no-digitalocean</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/vps.webp&quot; width=&quot;665&quot; height=&quot;440&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pequeno tutorial para a&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Criação de um servidor no Digital Ocean&lt;/p&gt;
+&lt;p&gt;Importante: obrigatório ter um cartão de crédito internacional.&lt;/p&gt;
+&lt;p&gt;O DO chama seu servidor de droplet (gotícula).&lt;/p&gt;
+&lt;p&gt;Acessar&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/&quot;&gt;https://www.digitalocean.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Clicar acima em Pricing&lt;/p&gt;
+&lt;p&gt;Role a tela&lt;/p&gt;
+&lt;p&gt;Iremos usar:&lt;/p&gt;
+&lt;p&gt;Droplets&lt;/p&gt;
+&lt;p&gt;Starting at&lt;/p&gt;
+&lt;p&gt;$4/month&lt;/p&gt;
+&lt;p&gt;Criar uum servidor mínimo, que inicia com US$ 4/mês&lt;/p&gt;
+&lt;p&gt;Logo abaixo clique em &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;View pricing -&amp;gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Veja o que dizem:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Droplets&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Implante Droplets (VMs na nuvem) em segundos. Execute qualquer carga de trabalho, desde aplicativos de missão crítica com uso intensivo de CPU, memória e armazenamento até sites de baixo tráfego.&lt;/p&gt;
+&lt;p&gt;Veja nosso https://docs.digitalocean.com/products/droplets/concepts/choosing-a-plan/  para saber qual plano Droplet é certo para você ou fale com um expert:&lt;br /&gt;&lt;a href=&quot;https://www.digitalocean.com/company/contact/sales?referrer=pricing/droplets&quot;&gt;https://www.digitalocean.com/company/contact/sales?referrer=pricing/droplets&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Aqui já começa o DO com sua forte c aracterística de documentação. É a que mais se empenha em produzir tutoriais sobre seus serviços e para cada tipo de distribuição que oferece.&lt;/p&gt;
+&lt;p&gt;Abaixo os servidores são agrupados por tipos e seus respectivos preços:&lt;br /&gt;&lt;a href=&quot;https://www.digitalocean.com/pricing/droplets&quot;&gt;https://www.digitalocean.com/pricing/droplets&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Aqui usarei um &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Basic Droplets&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Os Droplets básicos têm o uso de CPU mais eficiente a um custo menor para cargas de trabalho que subutilizam threads dedicados. Eles são ideais para aplicativos em rajadas que podem lidar com níveis variáveis de CPU.&lt;/p&gt;
+&lt;p&gt;Com este servidor podemos usar uma das distribuições linux, instalar o LAMP ou LEMP e abrigar um site ou aplicativo simples. Já fiz isso algumas vezes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Vou usar como exemplo o servidor mais simples e mais barato:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Memory      vCPU    Transfer    SSD     $/hr        $/mo &lt;br /&gt;512 MiB     1 vCPU  500 GiB     10 GiB    $0,00595    $4,00&lt;/p&gt;
+&lt;p&gt;No caso, um servidor pelo qual pagaremos 4 dólares por mês. Caso já saibamos que nosso site/aplicativo precisa de mais recurso então devemos escolher um perfil mais adequado. Algumas características podem ser melhoradas depois que o servidor for instalado sem destrução dos dados, mas outras precisam que criemos um novo servidor destruindo o atual.&lt;/p&gt;
+&lt;p&gt;Veja que tem um pequeno botão azup à direita com uma seta para a direita. Clique nele para escolher  este servidor e continuar.&lt;/p&gt;
+&lt;p&gt;Caso você ainda não tenha uma conta no DO abrirá um form para que crie a conta. Eu prefiro criar com meu email mas fique a vontade. Caso tenha escolhido email confirme sua senha. Quando abrir o e-mail para confirmação e clicar no link aparecerá uma tela para que selecione o tipo de uso que fará do servidor. No caso eu selecionei o primeiro, Deploy a web application. Então outra tela com How would you like to Deploy your Web Application?, onde selecionei PHP.&lt;/p&gt;
+&lt;p&gt;Confirme seu e-mail&lt;/p&gt;
+&lt;p&gt;Preencha o form&lt;/p&gt;
+&lt;p&gt;Verificar cartão ou paypal&lt;/p&gt;
+&lt;p&gt;Escolhi Paypal&lt;br /&gt;ele pede para selecionar um valor para começar&lt;br /&gt;escolho US$ 5 e clico abaixo em Paypal&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;Após confirmar o depósito somos levados para o painel administrativo para a criação do servidor/droplet.&lt;br /&gt;Tutorial - https://docs.digitalocean.com/products/droplets/how-to/create/  e &lt;a href=&quot;https://docs.digitalocean.com/products/droplets/how-to/resize/&quot;&gt;https://docs.digitalocean.com/products/droplets/how-to/resize/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Deploy a PHP (LAMP) server&lt;/p&gt;
+&lt;p&gt;Choose a location for your Droplet&lt;br /&gt;Mantive NYC3&lt;/p&gt;
+&lt;p&gt;Droplet Plan&lt;br /&gt;Mantenha US$ 6/mo&lt;/p&gt;
+&lt;p&gt;Então ele mostra&lt;/p&gt;
+&lt;p&gt;The following disk image will be installed for you with the following contents&lt;br /&gt;PHP (LAMP) icon&lt;/p&gt;
+&lt;p&gt;PHP (LAMP)&lt;/p&gt;
+&lt;p&gt;V Latest OS Ubuntu 22.04&lt;br /&gt;Package contents: Apache, MySQL server, PHP, Fail2ban, Postfix, Certbot&lt;/p&gt;
+&lt;p&gt;Muito bom, mas não quero isso, quero selecionar o que meu servidor vai usar.&lt;/p&gt;
+&lt;p&gt;Veja que à direita de Deploy a PHP (LAMP) server aparece um link &lt;/p&gt;
+&lt;p&gt;Select a different framework&lt;/p&gt;
+&lt;p&gt;Clique nele&lt;/p&gt;
+&lt;p&gt;Clique agora em&lt;/p&gt;
+&lt;p&gt;Deploy a Ubuntu server 22.04&lt;/p&gt;
+&lt;p&gt;Mas ainda não é o que quero, quero usar o Debian, que é mais econômico em termos de recursos e mais estável.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authentication&lt;/strong&gt;&lt;br /&gt;Esta parte é muito importante, onde temos opções de criar uma chave do SSH do nosso desktop e enviar para o DO ou também de criar uma senha que usaremos com o usuário root para gerenciar o servidor e acessar  o mesmo via SSH do nosso desktop. Eu uso linux em meu desktop e isso fica bem tranquilo, mas também podemos usar outro sistema operacional. Se usando linux minha sugestão é que instale o https://git-scm.com/download/win, no caso, após instalar use o Git Bash.&lt;/p&gt;
+&lt;p&gt;Caso escolha enviar a chave do SSH o servidor criado somente poderá ser acessado pelo desktop onde gerou a chave. Se chegar a formatar e instalar nova versão da distro ou do SO não  mais  poderá acessar o servidor. Apanhei um pouco para descobrir isso, fica msis seguro mas tem isto. Para evitar isso eu crio atualmente uma senha para o root, depois adiciono um usuário comum com poderes de sudo, configuro o SSH mudando a porta padrão, etc. Assim consigo acessar inclusive de outros computadores.&lt;/p&gt;
+&lt;p&gt;Selecione &lt;/p&gt;
+&lt;p&gt;Password&lt;/p&gt;
+&lt;p&gt;A senha não pode terminar com número nem com caractere  especial.&lt;/p&gt;
+&lt;p&gt;Veja quue não conseguimos criar um servidor com o prometido preço de US$ 4/mo e ficou em 6/mo. Clicar em Create abaixo&lt;/p&gt;
+&lt;p&gt;Como eu tenho uma conta no DO sei que podemos criar servidor usando o Debian.&lt;/p&gt;
+&lt;p&gt;Como quero criar o meu servidor com Debian, então destruirei este que criamos para criar outro.&lt;/p&gt;
+&lt;p&gt;Create&lt;br /&gt;Droplets&lt;/p&gt;
+&lt;p&gt;Agora sim, poderei escolher o Debian ou outras distros.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Debian - 12 64&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Basic&lt;br /&gt;Regular&lt;br /&gt;6/mo&lt;br /&gt;Password&lt;br /&gt;Hostname - debian&lt;/p&gt;
+&lt;p&gt;Create Droplet&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Aguarde enquanto ele cria o servidor&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Veja que a direita do nome do servidor aparece seu IP&lt;/p&gt;
+&lt;p&gt;Agora jjá pode acessar o servidor usando SSH&lt;/p&gt;
+&lt;p&gt;ssh root@164.92.94.174&lt;/p&gt;
+&lt;p&gt;Forneça a senha que deu na criação do servidor.&lt;/p&gt;
+&lt;p&gt;Caso queira destruir o servidor à direita clique nos 3 pontinhos e destroy&lt;br /&gt;Clique no botão&lt;br /&gt;Destroy this Droplet&lt;br /&gt;Digite o hostname, no caso debian e em Destroy&lt;/p&gt;
+&lt;p&gt;Para trabalhar com um servidor, geralmente precisamos apotar o nosso domínio para os servidores do DO.&lt;br /&gt;Acesse &lt;br /&gt;Networking&lt;br /&gt;Domains&lt;br /&gt;Entre com seu domínio e o adicione.&lt;br /&gt;Após criar os registros básicos no DNS, pegue os endereços dos servidores de DNS do DO e configure na administração do seu domínio.&lt;/p&gt;
+&lt;p&gt;A intenção deste tutorial é ajudar os que ainda não criaram um servidor no DO e caso queira criar agora, estimulá-lo a usar o meu cupom do DO, mas fique bem a vontade;&lt;/p&gt;
+&lt;p&gt;P.S.:&lt;/p&gt;
+&lt;p&gt;Estou planejando criar um treinamento em VPS com DigitalOcean.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Referências&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.digitalocean.com/products/&quot;&gt;https://docs.digitalocean.com/products/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.digitalocean.com/developer-center/droplets/&quot;&gt;https://docs.digitalocean.com/developer-center/droplets/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials&quot;&gt;https://www.digitalocean.com/community/tutorials&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.digitalocean.com/products/droplets/&quot;&gt;https://docs.digitalocean.com/products/droplets/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.digitalocean.com/products/networking/dns/&quot;&gt;https://docs.digitalocean.com/products/networking/dns/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.digitalocean.com/reference/api/&quot;&gt;https://docs.digitalocean.com/reference/api/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Obs&lt;/strong&gt;: alguns  passos podem ser diferentes com você.&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/vps.webp&quot; width=&quot;665&quot; height=&quot;440&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pequeno tutorial para a&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Criação de um servidor no Digital Ocean&lt;/p&gt;
+&lt;p&gt;Importante: obrigatório ter um cartão de crédito internacional.&lt;/p&gt;
+&lt;p&gt;O DO chama seu servidor de droplet (gotícula).&lt;/p&gt;
+&lt;p&gt;Acessar&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/&quot;&gt;https://www.digitalocean.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Clicar acima em Pricing&lt;/p&gt;
+&lt;p&gt;Role a tela&lt;/p&gt;
+&lt;p&gt;Iremos usar:&lt;/p&gt;
+&lt;p&gt;Droplets&lt;/p&gt;
+&lt;p&gt;Starting at&lt;/p&gt;
+&lt;p&gt;$4/month&lt;/p&gt;
+&lt;p&gt;Criar uum servidor mínimo, que inicia com US$ 4/mês&lt;/p&gt;
+&lt;p&gt;Logo abaixo clique em &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;View pricing -&amp;gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Veja o que dizem:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Droplets&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Implante Droplets (VMs na nuvem) em segundos. Execute qualquer carga de trabalho, desde aplicativos de missão crítica com uso intensivo de CPU, memória e armazenamento até sites de baixo tráfego.&lt;/p&gt;
+&lt;p&gt;Veja nosso https://docs.digitalocean.com/products/droplets/concepts/choosing-a-plan/  para saber qual plano Droplet é certo para você ou fale com um expert:&lt;br /&gt;&lt;a href=&quot;https://www.digitalocean.com/company/contact/sales?referrer=pricing/droplets&quot;&gt;https://www.digitalocean.com/company/contact/sales?referrer=pricing/droplets&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Aqui já começa o DO com sua forte c aracterística de documentação. É a que mais se empenha em produzir tutoriais sobre seus serviços e para cada tipo de distribuição que oferece.&lt;/p&gt;
+&lt;p&gt;Abaixo os servidores são agrupados por tipos e seus respectivos preços:&lt;br /&gt;&lt;a href=&quot;https://www.digitalocean.com/pricing/droplets&quot;&gt;https://www.digitalocean.com/pricing/droplets&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Aqui usarei um &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Basic Droplets&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Os Droplets básicos têm o uso de CPU mais eficiente a um custo menor para cargas de trabalho que subutilizam threads dedicados. Eles são ideais para aplicativos em rajadas que podem lidar com níveis variáveis de CPU.&lt;/p&gt;
+&lt;p&gt;Com este servidor podemos usar uma das distribuições linux, instalar o LAMP ou LEMP e abrigar um site ou aplicativo simples. Já fiz isso algumas vezes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Vou usar como exemplo o servidor mais simples e mais barato:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Memory      vCPU    Transfer    SSD     $/hr        $/mo &lt;br /&gt;512 MiB     1 vCPU  500 GiB     10 GiB    $0,00595    $4,00&lt;/p&gt;
+&lt;p&gt;No caso, um servidor pelo qual pagaremos 4 dólares por mês. Caso já saibamos que nosso site/aplicativo precisa de mais recurso então devemos escolher um perfil mais adequado. Algumas características podem ser melhoradas depois que o servidor for instalado sem destrução dos dados, mas outras precisam que criemos um novo servidor destruindo o atual.&lt;/p&gt;
+&lt;p&gt;Veja que tem um pequeno botão azup à direita com uma seta para a direita. Clique nele para escolher  este servidor e continuar.&lt;/p&gt;
+&lt;p&gt;Caso você ainda não tenha uma conta no DO abrirá um form para que crie a conta. Eu prefiro criar com meu email mas fique a vontade. Caso tenha escolhido email confirme sua senha. Quando abrir o e-mail para confirmação e clicar no link aparecerá uma tela para que selecione o tipo de uso que fará do servidor. No caso eu selecionei o primeiro, Deploy a web application. Então outra tela com How would you like to Deploy your Web Application?, onde selecionei PHP.&lt;/p&gt;
+&lt;p&gt;Confirme seu e-mail&lt;/p&gt;
+&lt;p&gt;Preencha o form&lt;/p&gt;
+&lt;p&gt;Verificar cartão ou paypal&lt;/p&gt;
+&lt;p&gt;Escolhi Paypal&lt;br /&gt;ele pede para selecionar um valor para começar&lt;br /&gt;escolho US$ 5 e clico abaixo em Paypal&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;Após confirmar o depósito somos levados para o painel administrativo para a criação do servidor/droplet.&lt;br /&gt;Tutorial - https://docs.digitalocean.com/products/droplets/how-to/create/  e &lt;a href=&quot;https://docs.digitalocean.com/products/droplets/how-to/resize/&quot;&gt;https://docs.digitalocean.com/products/droplets/how-to/resize/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Deploy a PHP (LAMP) server&lt;/p&gt;
+&lt;p&gt;Choose a location for your Droplet&lt;br /&gt;Mantive NYC3&lt;/p&gt;
+&lt;p&gt;Droplet Plan&lt;br /&gt;Mantenha US$ 6/mo&lt;/p&gt;
+&lt;p&gt;Então ele mostra&lt;/p&gt;
+&lt;p&gt;The following disk image will be installed for you with the following contents&lt;br /&gt;PHP (LAMP) icon&lt;/p&gt;
+&lt;p&gt;PHP (LAMP)&lt;/p&gt;
+&lt;p&gt;V Latest OS Ubuntu 22.04&lt;br /&gt;Package contents: Apache, MySQL server, PHP, Fail2ban, Postfix, Certbot&lt;/p&gt;
+&lt;p&gt;Muito bom, mas não quero isso, quero selecionar o que meu servidor vai usar.&lt;/p&gt;
+&lt;p&gt;Veja que à direita de Deploy a PHP (LAMP) server aparece um link &lt;/p&gt;
+&lt;p&gt;Select a different framework&lt;/p&gt;
+&lt;p&gt;Clique nele&lt;/p&gt;
+&lt;p&gt;Clique agora em&lt;/p&gt;
+&lt;p&gt;Deploy a Ubuntu server 22.04&lt;/p&gt;
+&lt;p&gt;Mas ainda não é o que quero, quero usar o Debian, que é mais econômico em termos de recursos e mais estável.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authentication&lt;/strong&gt;&lt;br /&gt;Esta parte é muito importante, onde temos opções de criar uma chave do SSH do nosso desktop e enviar para o DO ou também de criar uma senha que usaremos com o usuário root para gerenciar o servidor e acessar  o mesmo via SSH do nosso desktop. Eu uso linux em meu desktop e isso fica bem tranquilo, mas também podemos usar outro sistema operacional. Se usando linux minha sugestão é que instale o https://git-scm.com/download/win, no caso, após instalar use o Git Bash.&lt;/p&gt;
+&lt;p&gt;Caso escolha enviar a chave do SSH o servidor criado somente poderá ser acessado pelo desktop onde gerou a chave. Se chegar a formatar e instalar nova versão da distro ou do SO não  mais  poderá acessar o servidor. Apanhei um pouco para descobrir isso, fica msis seguro mas tem isto. Para evitar isso eu crio atualmente uma senha para o root, depois adiciono um usuário comum com poderes de sudo, configuro o SSH mudando a porta padrão, etc. Assim consigo acessar inclusive de outros computadores.&lt;/p&gt;
+&lt;p&gt;Selecione &lt;/p&gt;
+&lt;p&gt;Password&lt;/p&gt;
+&lt;p&gt;A senha não pode terminar com número nem com caractere  especial.&lt;/p&gt;
+&lt;p&gt;Veja quue não conseguimos criar um servidor com o prometido preço de US$ 4/mo e ficou em 6/mo. Clicar em Create abaixo&lt;/p&gt;
+&lt;p&gt;Como eu tenho uma conta no DO sei que podemos criar servidor usando o Debian.&lt;/p&gt;
+&lt;p&gt;Como quero criar o meu servidor com Debian, então destruirei este que criamos para criar outro.&lt;/p&gt;
+&lt;p&gt;Create&lt;br /&gt;Droplets&lt;/p&gt;
+&lt;p&gt;Agora sim, poderei escolher o Debian ou outras distros.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Debian - 12 64&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Basic&lt;br /&gt;Regular&lt;br /&gt;6/mo&lt;br /&gt;Password&lt;br /&gt;Hostname - debian&lt;/p&gt;
+&lt;p&gt;Create Droplet&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Aguarde enquanto ele cria o servidor&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Veja que a direita do nome do servidor aparece seu IP&lt;/p&gt;
+&lt;p&gt;Agora jjá pode acessar o servidor usando SSH&lt;/p&gt;
+&lt;p&gt;ssh root@164.92.94.174&lt;/p&gt;
+&lt;p&gt;Forneça a senha que deu na criação do servidor.&lt;/p&gt;
+&lt;p&gt;Caso queira destruir o servidor à direita clique nos 3 pontinhos e destroy&lt;br /&gt;Clique no botão&lt;br /&gt;Destroy this Droplet&lt;br /&gt;Digite o hostname, no caso debian e em Destroy&lt;/p&gt;
+&lt;p&gt;Para trabalhar com um servidor, geralmente precisamos apotar o nosso domínio para os servidores do DO.&lt;br /&gt;Acesse &lt;br /&gt;Networking&lt;br /&gt;Domains&lt;br /&gt;Entre com seu domínio e o adicione.&lt;br /&gt;Após criar os registros básicos no DNS, pegue os endereços dos servidores de DNS do DO e configure na administração do seu domínio.&lt;/p&gt;
+&lt;p&gt;A intenção deste tutorial é ajudar os que ainda não criaram um servidor no DO e caso queira criar agora, estimulá-lo a usar o meu cupom do DO, mas fique bem a vontade;&lt;/p&gt;
+&lt;p&gt;P.S.:&lt;/p&gt;
+&lt;p&gt;Estou planejando criar um treinamento em VPS com DigitalOcean.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Referências&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.digitalocean.com/products/&quot;&gt;https://docs.digitalocean.com/products/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.digitalocean.com/developer-center/droplets/&quot;&gt;https://docs.digitalocean.com/developer-center/droplets/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials&quot;&gt;https://www.digitalocean.com/community/tutorials&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.digitalocean.com/products/droplets/&quot;&gt;https://docs.digitalocean.com/products/droplets/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.digitalocean.com/products/networking/dns/&quot;&gt;https://docs.digitalocean.com/products/networking/dns/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.digitalocean.com/reference/api/&quot;&gt;https://docs.digitalocean.com/reference/api/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Obs&lt;/strong&gt;: alguns  passos podem ser diferentes com você.&lt;/p&gt;</content>
+		<category term="vps" />
+	</entry>
+</feed>

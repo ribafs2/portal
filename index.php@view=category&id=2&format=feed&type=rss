@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Início - RibaFS</title>
+		<description><![CDATA[]]></description>
+		<link>http://backup/ribamar/index.php?view=category&amp;id=2</link>
+		<lastBuildDate>Sat, 20 Apr 2024 23:40:44 -0300</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://backup/ribamar/ribamar/index.php?view=category&amp;id=2&amp;format=feed&amp;type=rss"/>
+		<language>pt-br</language>
+		<item>
+			<title>Entrada</title>
+			<link>http://backup/ribamar/index.php?view=article&amp;id=13&amp;catid=2</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php?view=article&amp;id=13&amp;catid=2</guid>
+			<description><![CDATA[<p><img src="http://backup/ribamar/images/entrada.jpg" width="905" height="603" /></p>
+<p><strong>Crédito:<br /></strong><a href="https://blog.foxmanager.com.br/ti-qual-a-importancia-da-tecnologia-da-informacao-nas-empresas-negocios/">https://blog.foxmanager.com.br/ti-qual-a-importancia-da-tecnologia-da-informacao-nas-empresas-negocios/</a></p>
+<p> </p>
+<p><strong>Este site destina-se ao compartilhamento de informações de TI em geral. Está apenas começando.</strong></p>]]></description>
+			<category>Genérica</category>
+			<pubDate>Thu, 07 Dec 2023 15:46:57 -0300</pubDate>
+		</item>
+		<item>
+			<title>Início</title>
+			<link>http://backup/ribamar/index.php</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php</guid>
+			<description><![CDATA[<p> </p>
+<p><a href="http://backup/ribamar/index.php/frontend">Frontend</a>  <a href="http://backup/ribamar/index.php/joomla">Joomla</a>  <a href="http://backup/ribamar/index.php/vps2">VPS</a>  <a href="http://backup/ribamar/index.php/servidores">Servidores</a>  <a href="http://backup/ribamar/index.php/contato">Contato</a></p>
+<p><strong>Este site destina-se ao compartilhamento de informações sobre TI em geral</strong></p>]]></description>
+			<category>Genérica</category>
+			<pubDate>Wed, 25 Oct 2023 20:13:51 -0300</pubDate>
+		</item>
+	</channel>
+</rss>

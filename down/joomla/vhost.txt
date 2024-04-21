@@ -1,0 +1,34 @@
+mkdir
+
+/backup/www
+
+sudo nano /etc/apache2/sites-available/backup.conf
+
+<VirtualHost *:80>
+    ServerAdmin ribafs@gmail.com
+    ServerName backup
+    ServerAlias www.backup
+    DocumentRoot /backup/www
+    <Directory /backup/www/>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+    <IfModule mod_dir.c>
+        DirectoryIndex index.php index.pl index.cgi index.html index.xhtml index.htm
+    </IfModule>
+</VirtualHost>
+
+sudo nano /etc/hosts
+
+127.0.0.1   backup
+
+sudo a2ensite backup
+
+apr
+
+http://backup
+
+    

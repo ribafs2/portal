@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Servidores - RibaFS</title>
+		<description><![CDATA[]]></description>
+		<link>http://backup/ribamar/index.php/servidores</link>
+		<lastBuildDate>Sat, 20 Apr 2024 23:40:43 -0300</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://backup/ribamar/index.php/servidores?format=feed&amp;type=rss"/>
+		<language>pt-br</language>
+		<item>
+			<title>Permissões web</title>
+			<link>http://backup/ribamar/index.php/servidores/permisisoes-web</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php/servidores/permisisoes-web</guid>
+			<description><![CDATA[<div class="_1mf _1mj" data-offset-key="a10mu-0-0"><span style="font-weight: bold;" data-offset-key="a10mu-0-0"><span data-text="true"><img style="display: block; margin-left: auto; margin-right: auto;" src="http://backup/ribamar/images/permissoes.png" width="800" height="442" /></span></span></div>
+<div class="_1mf _1mj" data-offset-key="a10mu-0-0"> </div>
+<p><strong>Adicionar usuário administrador ao grupo do servidor web</strong><br />Meu user - ribafs<br />sudo adduser ribafs www-data</p>
+<p>cd<br />nano /home/ribafs/perms</p>
+<p>#!/bin/sh<br />clear;<br />echo "Aguarde enquanto configuro as permissões do /var/www/$1";<br />echo "";<br />chown -R ribafs:www-data /var/www/$1;<br />find /var/www/$1 -type d -exec chmod 775 {} \;<br />find /var/www/$1 -type f -exec chmod 664 {} \;<br />echo "";<br />echo "Concluído!";</p>
+<p><strong>Varrer toda a pasta /var/www</strong><br />sudo sh perms</p>
+<p><strong>Varrer somente uma subpasta</strong><br />sudo sh perms subpasta</p>
+<p>ls -la /var/www/</p>]]></description>
+			<category>Servidores</category>
+			<pubDate>Mon, 08 Jan 2024 21:11:48 -0300</pubDate>
+		</item>
+	</channel>
+</rss>

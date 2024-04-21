@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="j5" xml:lang="pt-br" lang="pt-br" dir="ltr">
+
+<head>
+  
+  <meta charset="utf-8">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>CyberPanel - RibaFS</title>
+	<link href="cyberpanel@format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="CyberPanel - RibaFS">
+	<link href="cyberpanel@format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="CyberPanel - RibaFS">
+	<link href="../../images/ribafscircularmobile.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<link href="../../plugins/system/t4/themes/base/vendors/font-awesome5/css/all.min.css@5b7441.css" rel="stylesheet" />
+	<link href="../../plugins/system/t4/themes/base/vendors/font-awesome/css/font-awesome.min.css@5b7441.css" rel="stylesheet" />
+	<link href="../../templates/t4_bs5_blank/css/extras/com_docman.css@5b7441.css" rel="stylesheet" />
+	<link href="../../templates/t4_bs5_blank/css/extras/com_easyblog.css@5b7441.css" rel="stylesheet" />
+	<link href="../../templates/t4_bs5_blank/css/extras/com_easydiscuss.css@5b7441.css" rel="stylesheet" />
+	<link href="../../templates/t4_bs5_blank/css/extras/com_virtuemart.css@5b7441.css" rel="stylesheet" />
+	<link href="../../templates/t4_bs5_blank/css/extras/com_kunena.css@5b7441.css" rel="stylesheet" />
+	<link href="../../templates/t4_bs5_blank/css/extras/com_jomsocial.css@5b7441.css" rel="stylesheet" />
+	<link href="../../media/vendor/joomla-custom-elements/css/joomla-alert.min.css@0.2.0.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Inter%3A300%2C400%2C500%2C600%2C700%2C800" rel="stylesheet" />
+	<link href="../../templates/t4_bs5_blank/css/template.css@1872e6e98a6bc7aa7eebc1b41e23bc2e.css" rel="stylesheet" />
+	<link href="../../media/t4/css/18-sub.css@d96cbba6820281d3c50994ac41ae317b.css" rel="stylesheet" />
+<script src="../../media/vendor/jquery/js/jquery.min.js@3.7.1"></script>
+	<script src="../../media/legacy/js/jquery-noconflict.min.js@504da4"></script>
+	<script src="../../media/vendor/jquery-migrate/js/jquery-migrate.min.js@3.4.1"></script>
+	<script type="application/json" class="joomla-script-options new">{"joomla.jtext":{"ERROR":"Erro","MESSAGE":"Mensagem","NOTICE":"Aviso","WARNING":"Atenção","JCLOSE":"Fechar","JOK":"OK","JOPEN":"Abrir"},"system.paths":{"root":"/ribamar","rootFull":"http://backup/ribamar/","base":"/ribamar","baseFull":"http://backup/ribamar/"},"csrf.token":"01979e17a23725f5a4644cdab8431a24"}</script>
+	<script src="../../media/system/js/core.min.js@83f2c9"></script>
+	<script src="../../media/vendor/webcomponentsjs/js/webcomponents-bundle.min.js@2.8.0" nomodule defer></script>
+	<script src="../../media/system/js/joomla-hidden-mail.min.js@80d9c7" type="module"></script>
+	<script src="../../media/system/js/messages.min.js@7a5169" type="module"></script>
+	<script src="../../media/vendor/bootstrap/js/dropdown.min.js@5.3.2" type="module"></script>
+	<script src="../../media/vendor/bootstrap/js/collapse.min.js@5.3.2" type="module"></script>
+	<script src="../../templates/t4_bs5_blank/js/template.js"></script>
+	<script src="../../plugins/system/t4/themes/base/js/base.js@5b7441"></script>
+	<script src="../../plugins/system/t4/themes/base/js/megamenu.js"></script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"http://backup/ribamar/#/schema/Organization/base","name":"RibaFS","url":"http://backup/ribamar/"},{"@type":"WebSite","@id":"http://backup/ribamar/#/schema/WebSite/base","url":"http://backup/ribamar/","name":"RibaFS","publisher":{"@id":"http://backup/ribamar/#/schema/Organization/base"}},{"@type":"WebPage","@id":"http://backup/ribamar/#/schema/WebPage/base","url":"http://backup/ribamar/index.php/vps2/cyberpanel","name":"CyberPanel - RibaFS","isPartOf":{"@id":"http://backup/ribamar/#/schema/WebSite/base"},"about":{"@id":"http://backup/ribamar/#/schema/Organization/base"},"inLanguage":"pt-BR","breadcrumb":{"@id":"http://backup/ribamar/#/schema/BreadcrumbList/17"}},{"@type":"Blog","@id":"http://backup/ribamar/#/schema/com_content/category/47","isPartOf":{"@id":"http://backup/ribamar/#/schema/WebPage/base"},"name":"VPS","blogPost":[{"@id":"http://backup/ribamar/#/schema/com_content/article/78"},{"@id":"http://backup/ribamar/#/schema/com_content/article/65"},{"@id":"http://backup/ribamar/#/schema/com_content/article/46"},{"@id":"http://backup/ribamar/#/schema/com_content/article/45"},{"@id":"http://backup/ribamar/#/schema/com_content/article/44"},{"@id":"http://backup/ribamar/#/schema/com_content/article/43"}]},{"@type":"BlogPosting","@id":"http://backup/ribamar/#/schema/com_content/article/78","name":"Backup e Restore no CyberPanel","headline":"Backup e Restore no CyberPanel","inLanguage":"pt-BR","author":{"@type":"Person","name":"Ribamar FS"},"articleSection":"CyberPanel","dateCreated":"2024-02-10T08:18:17+00:00","interactionStatistic":{"@type":"InteractionCounter","userInteractionCount":158}},{"@type":"BlogPosting","@id":"http://backup/ribamar/#/schema/com_content/article/65","name":"Change site domain on CyberPanel","headline":"Change site domain on CyberPanel","inLanguage":"pt-BR","author":{"@type":"Person","name":"Ribamar FS"},"articleSection":"CyberPanel","dateCreated":"2024-02-03T19:26:50+00:00","interactionStatistic":{"@type":"InteractionCounter","userInteractionCount":133}},{"@type":"BlogPosting","@id":"http://backup/ribamar/#/schema/com_content/article/46","name":"Backup para o Desktop","headline":"Backup para o Desktop","inLanguage":"pt-BR","author":{"@type":"Person","name":"Ribamar FS"},"articleSection":"CyberPanel","dateCreated":"2024-01-27T08:09:30+00:00","interactionStatistic":{"@type":"InteractionCounter","userInteractionCount":61}},{"@type":"BlogPosting","@id":"http://backup/ribamar/#/schema/com_content/article/45","name":"Usability and Security on VPS with CyberPanel","headline":"Usability and Security on VPS with CyberPanel","inLanguage":"pt-BR","author":{"@type":"Person","name":"Ribamar FS"},"articleSection":"CyberPanel","dateCreated":"2024-01-27T07:36:35+00:00","interactionStatistic":{"@type":"InteractionCounter","userInteractionCount":42}},{"@type":"BlogPosting","@id":"http://backup/ribamar/#/schema/com_content/article/44","name":"Restore CyberPanel Website","headline":"Restore CyberPanel Website","inLanguage":"pt-BR","author":{"@type":"Person","name":"Ribamar FS"},"articleSection":"CyberPanel","dateCreated":"2024-01-27T07:31:57+00:00","interactionStatistic":{"@type":"InteractionCounter","userInteractionCount":55}},{"@type":"BlogPosting","@id":"http://backup/ribamar/#/schema/com_content/article/43","name":"Treinamento","headline":"Treinamento","inLanguage":"pt-BR","author":{"@type":"Person","name":"Ribamar FS"},"articleSection":"CyberPanel","dateCreated":"2024-01-27T07:27:20+00:00","interactionStatistic":{"@type":"InteractionCounter","userInteractionCount":42}}]}</script>
+
+
+  <meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"/>
+  <style  type="text/css">
+    @-webkit-viewport   { width: device-width; }
+    @-moz-viewport      { width: device-width; }
+    @-ms-viewport       { width: device-width; }
+    @-o-viewport        { width: device-width; }
+    @viewport           { width: device-width; }
+  </style>
+  <meta name="HandheldFriendly" content="true"/>
+  <meta name="apple-mobile-web-app-capable" content="YES"/>
+  <!-- //META FOR IOS & HANDHELD -->
+  
+</head>
+
+<body class="site-default navigation-default theme-architect layout-default nav-breakpoint-lg com_content view-category item-166 loaded-bs5" data-jver="5">
+  
+  
+  <main>
+    <div class="t4-wrapper">
+      <div class="t4-content">
+        <div class="t4-content-inner">
+          
+<div id="t4-header" class="t4-section  t4-header"><!-- HEADER BLOCK -->
+<header class="header-block header-block-2">
+  <div class="container-xxl">
+    <div class="header-wrap d-flex align-items-center justify-content-between collapse-static">
+      <div class="navbar-brand logo-image logo-control">
+    <a href="../../index.html" title="RibaFS">
+            <img class="logo-img-sm d-block d-sm-none" src="../../images/ribafscircularmobile.png" alt="RibaFS" />
+      	
+          <img class="logo-img d-none d-sm-block" width="67" height="68" src="../../images/ribafscircularmobile.png" alt="RibaFS" />
+    
+    </a>
+  </div>
+
+
+      <div class="t4-navbar mx-auto collapse-static">
+        
+<nav class="navbar navbar-expand-lg">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#t4-megamenu-mainmenu" aria-controls="t4-megamenu-mainmenu" aria-expanded="false" aria-label="Toggle navigation" style="display: none;">
+    <i class="fa fa-bars toggle-bars"></i>
+</button>
+	<div id="t4-megamenu-mainmenu" class="t4-megamenu collapse navbar-collapse slide animate" data-duration="400">
+
+<ul class="nav navbar-nav level0"  itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+<li class="nav-item default" data-id="101" data-level="1"><a href="../../index.php.html" itemprop="url" class="nav-link"><span itemprop="name"><span class="menu-item-title">Início</span></span></a></li><li class="nav-item" data-id="240" data-level="1"><a href="../frontend.html" itemprop="url" class="nav-link"><span itemprop="name"><span class="menu-item-title">Frontend</span></span></a></li><li class="nav-item" data-id="207" data-level="1"><a itemprop="url" href="javascript:;" class="nav-header  nav-link" >
+	<span itemprop="name"><span class="menu-item-title">PHP</span></span>
+	</a>
+</li><li class="nav-item" data-id="205" data-level="1"><a href="../joomla.html" itemprop="url" class="nav-link"><span itemprop="name"><span class="menu-item-title">Joomla</span></span></a></li><li class="nav-item" data-id="206" data-level="1"><a itemprop="url" href="javascript:;" class="nav-header  nav-link" >
+	<span itemprop="name"><span class="menu-item-title">Laravel</span></span>
+	</a>
+</li><li class="nav-item current active" data-id="166" data-level="1"><a href="../vps2.html" itemprop="url" class="nav-link" aria-current="page"><span itemprop="name"><span class="menu-item-title">VPS</span></span></a></li><li class="nav-item" data-id="103" data-level="1"><a href="../servidores.html" itemprop="url" class="nav-link"><span itemprop="name"><span class="menu-item-title">Servidores</span></span></a></li><li class="nav-item" data-id="106" data-level="1"><a href="../contato.html" itemprop="url" class="nav-link"><span itemprop="name"><span class="menu-item-title">Contato</span></span></a></li></ul></div>
+</nav>
+
+      </div>
+
+      <div class="t4-header-r d-flex align-items-center">
+        
+        <nav class="navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#t4-megamenu-mainmenu" aria-controls="t4-megamenu-mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars toggle-bars"></i>
+    </button>
+</nav>
+        
+      </div>
+    </div>
+  </div>
+</header>
+<!-- // HEADER BLOCK --></div>
+
+
+
+<div id="t4-main-body" class="t4-section  t4-main-body">
+<div class="t4-section-inner container"><div class="t4-row row">
+<div class="t4-col col-md">
+<div id="system-message-container" aria-live="polite"></div>
+<div class="com-content-category-blog blog" itemscope itemtype="https://schema.org/Blog">
+	
+		
+	
+	
+	
+	
+				<div class="com-content-category-blog__items blog-items items-leading ">
+							<div class="com-content-category-blog__item blog-item"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					<div class="blog-item-content"><!-- Double divs required for IE11 grid fallback -->
+						
+
+<div class="item-content">
+			<div class="system-unpublished">
+	
+	
+	<div class="page-header">
+					<h2 itemprop="headline">
+									<a href="cyberpanel/backup-e-restore-no-cyberpanel.html" itemprop="url">
+						Backup e Restore no CyberPanel					</a>
+							</h2>
+		
+		
+			</div>
+
+	<div class="article-aside">
+
+				
+					<dl class="article-info text-muted">
+
+	
+		<dt class="article-info-term">
+							Detalhes					</dt>
+
+					<dd class="createdby" itemprop="author" itemscope itemtype="https://schema.org/Person">
+					<span  class="author-img">
+				<a href="author/ribafs.html" title="Ribamar FS">
+				<img src="http://backup/ribamar//media/t4/author/default.jpg" alt="Ribamar FS">				</a>
+				</span>
+				By <a href="author/ribafs.html" itemprop="url"><span itemprop="name">Ribamar FS</span></a>	</dd>
+
+<span style="display: none;" itemprop="publisher" itemtype="http://schema.org/Organization" itemscope>
+			<span itemprop="name">Ribamar FS</span></span>
+		
+		
+					<dd class="category-name">
+						Categoria: <a href="cyberpanel.html" itemprop="genre">CyberPanel</a>	</dd>		
+		
+					<dd class="published">
+	<span class="fa fa-calendar" aria-hidden="true"></span>
+	<time datetime="2024-02-10T05:18:17-03:00" itemprop="datePublished">
+		10 Fevereiro 2024	</time>
+</dd>
+		
+	
+			
+		
+					<dd class="hits">
+	<span class="fa fa-eye" aria-hidden="true"></span>
+	<meta itemprop="interactionCount" content="UserPageVisits:158">
+	Acessos: 158</dd>
+			</dl>
+		
+		
+	</div>
+
+		
+	
+		
+	<div class="item-intro">
+		<p> </p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="../../images/restore.png" width="256" height="256" /></p>
+<p>Por padrão o CyberPabel cria seus backups em uma subpasta 'backup' do domínio e não permite seu download via painel web.<br /><br />E para que possamos restaurar um backup, caso necessitemos, o arquivo de backup deve obrigatoriamente estar na pasta /home/backup, no caso ser movido de dominio/backup para /home/backup.</p>
+<p>Veja como faço atualmente para facilitar estas operações e também trazer uma cópia do backup para o meu desktop.</p>
+<p><strong>Adiciono meu user para o grupo do root</strong></p>
+<p>sudo adduser ribafs root</p>
+<p><strong>Criar o script no servidor</strong></p>
+<p><em>nano /home/ribafs/movebk.sh</em></p>
+<p><em>#!/bin/bash</em><br /><em>echo "Enter domain/subdomain name to move backups to /home/backup. Enter to continue"</em><br /><em>read domain</em><br /><em>FILE=/home/$domain/backup/*.tar.gz</em><br /><em>sudo mv $FILE /home/backup </em><br /><em>sudo chown ribafs:root /home/backup/*</em></p>
+<p><strong>Criar o script movecp no desktop</strong></p>
+<p><em>sudo nano /usr/local/bin/movecp</em></p>
+<p><em>#!/bin/bash</em><br /><em># Executar script do servidor via SSH remotamente</em><br /><em>ssh -p 65522 -tt <joomla-hidden-mail  is-link="1" is-email="1" first="cmliYWZz" last="cmliYW1hci5uZXQuYnI=" text="cmliYWZzQHJpYmFtYXIubmV0LmJy" base="/ribamar" >Este endereço de email está sendo protegido de spambots. Você precisa do JavaScript ativado para vê-lo.</joomla-hidden-mail> "sudo sh /home/ribafs/movebk.sh"</em><br /><em>rsync -av --ignore-existing --progress -e 'ssh -p 65522' <joomla-hidden-mail  is-link="1" is-email="1" first="cmliYWZz" last="cmliYW1hci5uZXQuYnI=" text="cmliYWZzQHJpYmFtYXIubmV0LmJy" base="/ribamar" >Este endereço de email está sendo protegido de spambots. Você precisa do JavaScript ativado para vê-lo.</joomla-hidden-mail>:/home/backup/* /backup/transp/backup/</em><br /><em>echo "Backup on desktop"</em></p>
+<p><em>sudo chmod +x /usr/local/bin/movecp</em></p>
+<p><br /><strong>Donos e permissões de arquivos e pastas no servidor do CyberPanel.</strong></p>
+<p>Quando criamos um site, ele cria uma pasta com o nome do domínio na pasta /home. Esta pasta tem como dono e grupo algo como domin3454 e as permissões são bem restritivas, 711, drwx--x--x</p>
+<p>O CP é muito exigente nestes aspectos. Tanto que de mudarmos o dono do arquivo de backup ou da pasta, já não mais conseguiremos fazer novos backups, pois ele verifica isso antes.</p>
+<p>Caso alteremos alguma permissão ou dono, precisamos voltar ao que era antes.</p>
+<p> </p>	</div>
+	
+	
+	
+		</div>
+	</div>
+
+					</div>
+				</div>
+									</div>
+	
+	
+							<div class="com-content-category-blog__items blog-items">
+		<div class="items-row cols-1 row">
+		
+				<div class="col-12 col-md-12 col-lg-12">
+					<div class="item" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+						
+
+<div class="item-content">
+			<div class="system-unpublished">
+	
+	
+	<div class="page-header">
+					<h2 itemprop="headline">
+									<a href="cyberpanel/change-site-domain-on-cyberpanel.html" itemprop="url">
+						Change site domain on CyberPanel					</a>
+							</h2>
+		
+		
+			</div>
+
+	<div class="article-aside">
+
+				
+					<dl class="article-info text-muted">
+
+	
+		<dt class="article-info-term">
+							Detalhes					</dt>
+
+					<dd class="createdby" itemprop="author" itemscope itemtype="https://schema.org/Person">
+					<span  class="author-img">
+				<a href="author/ribafs.html" title="Ribamar FS">
+				<img src="http://backup/ribamar//media/t4/author/default.jpg" alt="Ribamar FS">				</a>
+				</span>
+				By <a href="author/ribafs.html" itemprop="url"><span itemprop="name">Ribamar FS</span></a>	</dd>
+
+<span style="display: none;" itemprop="publisher" itemtype="http://schema.org/Organization" itemscope>
+			<span itemprop="name">Ribamar FS</span></span>
+		
+		
+					<dd class="category-name">
+						Categoria: <a href="cyberpanel.html" itemprop="genre">CyberPanel</a>	</dd>		
+		
+					<dd class="published">
+	<span class="fa fa-calendar" aria-hidden="true"></span>
+	<time datetime="2024-02-03T16:26:50-03:00" itemprop="datePublished">
+		03 Fevereiro 2024	</time>
+</dd>
+		
+	
+			
+		
+					<dd class="hits">
+	<span class="fa fa-eye" aria-hidden="true"></span>
+	<meta itemprop="interactionCount" content="UserPageVisits:133">
+	Acessos: 133</dd>
+			</dl>
+		
+		
+	</div>
+
+		
+	
+		
+	<div class="item-intro">
+		<p> </p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="../../images/dominio.webp" width="800" height="533" /></p>
+<p><strong>Change a website domain in CyberPanel</strong></p>
+<p>I have a website with the Joomla CMS, which used the <strong>test.ribamar.net.br</strong> subdomain. So I decided to change to <strong>loja.ribamar.net.br</strong>. CyberPanel doesn't do this via the web interface and I don't know how, not even via the server terminal.</p>
+<p>So I made a backup oftestes.ribamar.net.br and downloaded this backup to my desktop.<br />I unzipped it. It expands to multiple files and folders.<br />I accessed the public_html folder and compressed it as loja.zip.<br />I also got the .sql from the bank.</p>
+<p>I went to CP and created a new website, now for loja.ribamar.net.br.<br />I also created the bank for him, loja_db.</p>
+<p>List sites - loja.ribamar.net.br - File Manager.<br />I opened the loja.ribamar.net.br - public_html folder and uploaded the loja.zip and extracted it,<br />I went to phpmyadmin and imported the backup sql into the loja_db database.<br /><br />I went back to the File Manager - I edited configuration.php and adjusted the database data and also $log_path and $tmp_path.<br /><br />It worked.</p>	</div>
+	
+	
+	
+		</div>
+	</div>
+
+					</div><!-- end item -->
+				</div><!-- end span -->
+			
+		
+				<div class="col-12 col-md-12 col-lg-12">
+					<div class="item" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+						
+
+<div class="item-content">
+			<div class="system-unpublished">
+	
+	
+	<div class="page-header">
+					<h2 itemprop="headline">
+									<a href="cyberpanel/backup-para-o-desktop.html" itemprop="url">
+						Backup para o Desktop					</a>
+							</h2>
+		
+		
+			</div>
+
+	<div class="article-aside">
+
+				
+					<dl class="article-info text-muted">
+
+	
+		<dt class="article-info-term">
+							Detalhes					</dt>
+
+					<dd class="createdby" itemprop="author" itemscope itemtype="https://schema.org/Person">
+					<span  class="author-img">
+				<a href="author/ribafs.html" title="Ribamar FS">
+				<img src="http://backup/ribamar//media/t4/author/default.jpg" alt="Ribamar FS">				</a>
+				</span>
+				By <a href="author/ribafs.html" itemprop="url"><span itemprop="name">Ribamar FS</span></a>	</dd>
+
+<span style="display: none;" itemprop="publisher" itemtype="http://schema.org/Organization" itemscope>
+			<span itemprop="name">Ribamar FS</span></span>
+		
+		
+					<dd class="category-name">
+						Categoria: <a href="cyberpanel.html" itemprop="genre">CyberPanel</a>	</dd>		
+		
+					<dd class="published">
+	<span class="fa fa-calendar" aria-hidden="true"></span>
+	<time datetime="2024-01-27T05:09:30-03:00" itemprop="datePublished">
+		27 Janeiro 2024	</time>
+</dd>
+		
+	
+			
+		
+					<dd class="hits">
+	<span class="fa fa-eye" aria-hidden="true"></span>
+	<meta itemprop="interactionCount" content="UserPageVisits:61">
+	Acessos: 61</dd>
+			</dl>
+		
+		
+	</div>
+
+		
+	
+		
+	<div class="item-intro">
+		<p> </p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="../../images/backup.jpg" width="450" height="359" /></p>
+<p><strong>Baixando backup dos sites para o desktop no CyberPanel<br /></strong></p>
+<p><strong>Faça o ajuste do user, porta, etc.</strong></p>
+<p><strong>Acessar o servido </strong></p>
+<p>ssh -p porta user@IP</p>
+<p><strong>Adicionar user para o grupo do root</strong></p>
+<p>sudo su</p>
+<p>adduser ribafs root</p>
+<p><strong>Mudar o dono de /home/backup assim:</strong></p>
+<p>chown -R ribafs:root /home/ribafs</p>
+<p><strong>Criar no servidor</strong></p>
+<p><em>nano /usr/local/bin/perms</em></p>
+<p><em>#!/bin/sh<br />clear;<br /># "Execute com o root."<br />chown -R ribafs:root /home/backup;<br />#find /home/backup -type f -exec chmod 664 {} \;<br />echo "Aguarde..."<br /></em></p>
+<p><em>chmod +x /usr/local/bin/perms</em></p>
+<p><strong>Criar no desktop</strong></p>
+<p><span style="font-size: 14px;"><em>sudo su</em></span></p>
+<p><span style="font-size: 14px;"><em>nano /usr/local/bin/backups</em></span></p>
+<p><span style="font-size: 14px;"><em>ssh -p 60022 -t <joomla-hidden-mail  is-link="1" is-email="1" first="cmliYWZz" last="cmliYW1hci5uZXQuYnI=" text="cmliYWZzQHJpYmFtYXIubmV0LmJy" base="/ribamar" >Este endereço de email está sendo protegido de spambots. Você precisa do JavaScript ativado para vê-lo.</joomla-hidden-mail> "sudo /usr/local/bin/perms"<br />rsync -av --ignore-existing --progress -e 'ssh -p 60022' <joomla-hidden-mail  is-link="1" is-email="1" first="cmliYWZz" last="cmliYW1hci5uZXQuYnI=" text="cmliYWZzQHJpYmFtYXIubmV0LmJy" base="/ribamar" >Este endereço de email está sendo protegido de spambots. Você precisa do JavaScript ativado para vê-lo.</joomla-hidden-mail>:/home/backup/* /home/ribafs/backup/<br /></em></span></p>
+<p><span style="font-size: 14px;"><em>chmod +x /usr/local/bin/backups</em></span></p>
+<p><span style="font-size: 14px;">Baixando os backups para a pasta /home/ribafs/backup do desktop</span></p>
+<p><span style="font-size: 14px;">backups</span></p>
+<p> </p>	</div>
+	
+	
+	
+		</div>
+	</div>
+
+					</div><!-- end item -->
+				</div><!-- end span -->
+			
+		
+				<div class="col-12 col-md-12 col-lg-12">
+					<div class="item" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+						
+
+<div class="item-content">
+			<div class="system-unpublished">
+	
+	
+	<div class="page-header">
+					<h2 itemprop="headline">
+									<a href="cyberpanel/usability-and-security-on-vps-with-cyberpanel.html" itemprop="url">
+						Usability and Security on VPS with CyberPanel					</a>
+							</h2>
+		
+		
+			</div>
+
+	<div class="article-aside">
+
+				
+					<dl class="article-info text-muted">
+
+	
+		<dt class="article-info-term">
+							Detalhes					</dt>
+
+					<dd class="createdby" itemprop="author" itemscope itemtype="https://schema.org/Person">
+					<span  class="author-img">
+				<a href="author/ribafs.html" title="Ribamar FS">
+				<img src="http://backup/ribamar//media/t4/author/default.jpg" alt="Ribamar FS">				</a>
+				</span>
+				By <a href="author/ribafs.html" itemprop="url"><span itemprop="name">Ribamar FS</span></a>	</dd>
+
+<span style="display: none;" itemprop="publisher" itemtype="http://schema.org/Organization" itemscope>
+			<span itemprop="name">Ribamar FS</span></span>
+		
+		
+					<dd class="category-name">
+						Categoria: <a href="cyberpanel.html" itemprop="genre">CyberPanel</a>	</dd>		
+		
+					<dd class="published">
+	<span class="fa fa-calendar" aria-hidden="true"></span>
+	<time datetime="2024-01-27T04:36:35-03:00" itemprop="datePublished">
+		27 Janeiro 2024	</time>
+</dd>
+		
+	
+			
+		
+					<dd class="hits">
+	<span class="fa fa-eye" aria-hidden="true"></span>
+	<meta itemprop="interactionCount" content="UserPageVisits:42">
+	Acessos: 42</dd>
+			</dl>
+		
+		
+	</div>
+
+		
+	
+		
+	<div class="item-intro">
+		<p> </p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="../../images/cp.png" width="1185" height="787" /></p>
+<pre><strong>Improving Usability and Security on VPS with <mark data-markjs="true">CyberPanel</mark></strong></pre>
+<p><strong><a href="http://backup/ribamar/index.php/treinamentos/vps/usability-and-security-on-vps-with-cyberpanel?highlight=WyJjeWJlcnBhbmVsIl0=">https://ribamar.net.br/index.php/treinamentos/vps/usability-and-security-on-vps-with-cyberpanel</a></strong></p>
+<p> </p>	</div>
+	
+	
+	
+		</div>
+	</div>
+
+					</div><!-- end item -->
+				</div><!-- end span -->
+			
+		
+				<div class="col-12 col-md-12 col-lg-12">
+					<div class="item" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+						
+
+<div class="item-content">
+			<div class="system-unpublished">
+	
+	
+	<div class="page-header">
+					<h2 itemprop="headline">
+									<a href="cyberpanel/restore-cyberpanel-website.html" itemprop="url">
+						Restore CyberPanel Website					</a>
+							</h2>
+		
+		
+			</div>
+
+	<div class="article-aside">
+
+				
+					<dl class="article-info text-muted">
+
+	
+		<dt class="article-info-term">
+							Detalhes					</dt>
+
+					<dd class="createdby" itemprop="author" itemscope itemtype="https://schema.org/Person">
+					<span  class="author-img">
+				<a href="author/ribafs.html" title="Ribamar FS">
+				<img src="http://backup/ribamar//media/t4/author/default.jpg" alt="Ribamar FS">				</a>
+				</span>
+				By <a href="author/ribafs.html" itemprop="url"><span itemprop="name">Ribamar FS</span></a>	</dd>
+
+<span style="display: none;" itemprop="publisher" itemtype="http://schema.org/Organization" itemscope>
+			<span itemprop="name">Ribamar FS</span></span>
+		
+		
+					<dd class="category-name">
+						Categoria: <a href="cyberpanel.html" itemprop="genre">CyberPanel</a>	</dd>		
+		
+					<dd class="published">
+	<span class="fa fa-calendar" aria-hidden="true"></span>
+	<time datetime="2024-01-27T04:31:57-03:00" itemprop="datePublished">
+		27 Janeiro 2024	</time>
+</dd>
+		
+	
+			
+		
+					<dd class="hits">
+	<span class="fa fa-eye" aria-hidden="true"></span>
+	<meta itemprop="interactionCount" content="UserPageVisits:55">
+	Acessos: 55</dd>
+			</dl>
+		
+		
+	</div>
+
+		
+	
+		
+	<div class="item-intro">
+		<p> </p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="../../images/restore.png" width="544" height="544" /></p>
+<p><strong>Restore website in cyberpanel without leaving the desktop</strong></p>
+<p><strong><a href="http://backup/ribamar/index.php/treinamentos/vps/restore-cyberpanel-website">https://ribamar.net.br/index.php/treinamentos/vps/restore-cyberpanel-website</a></strong></p>
+<p> </p>	</div>
+	
+	
+	
+		</div>
+	</div>
+
+					</div><!-- end item -->
+				</div><!-- end span -->
+			
+					</div>
+		</div>
+	
+			<div class="items-more">
+			<section class="items-more">
+	<h3>Mais Artigos...</h3>
+	<ol class="com-content-category-blog__links nav nav-tabs nav-stacked">
+					<li class="com-content-category-blog__link">
+				<a href="cyberpanel/treinamento.html">
+					Treinamento</a>
+			</li>
+			</ol>
+</section>
+		</div>
+	
+		</div>
+
+</div>
+<div class="t4-col sidebar-l col-sm-12 col-lg-3 order-md-first">
+<div class="t4-module module " id="Mod112"><div class="module-inner"><h3 class="module-title "><span>Novidades</span></h3><div class="module-ct"><ul class="mod-articleslatest latestnews mod-list">
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="../frontend/seu-projeto-precisa.html" itemprop="url">
+            <span itemprop="name">
+                Seu projeto precisa?            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="../joomla/fabrik-4-e-book.html" itemprop="url">
+            <span itemprop="name">
+                Fabrik 4 E-book e Vídeo            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="http://backup/ribamar/index.php/vps2/gravacao-de-videos" itemprop="url">
+            <span itemprop="name">
+                Gravação de Vídeos            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="../joomla/instalacao-do-joomla-5-0-3.html" itemprop="url">
+            <span itemprop="name">
+                Instalação do Joomla 5.0.3            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="../joomla/pt-br-para-joomla-5-0-3.html" itemprop="url">
+            <span itemprop="name">
+                pt-BR para Joomla 5.0.3            </span>
+        </a>
+    </li>
+</ul>
+</div></div></div><div class="t4-module module " id="Mod121"><div class="module-inner"><h3 class="module-title "><span>Pensamento do dia</span></h3><div class="module-ct"><div id="pensamentos">Quem não cultiva o hábito do trabalho contrai o vício da preguiça. (Autor desconhecido)
+</div></ br></div></div></div>
+</div>
+<div class="t4-col sidebar-r col-sm-12 col-lg-3">
+<div class="t4-module module " id="Mod113"><div class="module-inner"><h3 class="module-title "><span>Populares</span></h3><div class="module-ct"><ul class="mostread mod-list">
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="../../index.php.html" itemprop="url">
+            <span itemprop="name">
+                Início            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="http://backup/ribamar/index.php/vps2/entrada" itemprop="url">
+            <span itemprop="name">
+                Entrada            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="vps-revenda.html" itemprop="url">
+            <span itemprop="name">
+                VPS Revenda            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="comecando.html" itemprop="url">
+            <span itemprop="name">
+                Começando o treinamento            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="../joomla/fabrik-4-e-book.html" itemprop="url">
+            <span itemprop="name">
+                Fabrik 4 E-book e Vídeo            </span>
+        </a>
+    </li>
+</ul>
+</div></div></div>
+</div>
+</div></div>
+</div>
+
+<div id="t4-breadcrumbs" class="t4-section  t4-breadcrumbs">
+<div class="t4-section-inner container"><nav role="navigation" aria-label="Breadcrumbs">
+	<ol itemscope itemtype="https://schema.org/BreadcrumbList" class="mod-breadcrumbs breadcrumb">
+					<li>
+				Você está aqui: &#160;
+			</li>
+		
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="mod-breadcrumbs__item breadcrumb-item"><span property="item" typeof="WebPage"><a itemprop="item" href="../../index.php.html" class="pathway"><span itemprop="name">Início</span></a></span>
+											<span class="divider"></span>
+					
+					<meta itemprop="position" content="1">
+				</li>
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="mod-breadcrumbs__item breadcrumb-item"><span property="item" typeof="WebPage"><a itemprop="item" href="../vps2.html" class="pathway"><span itemprop="name">VPS</span></a></span>
+											<span class="divider"></span>
+					
+					<meta itemprop="position" content="2">
+				</li>
+							<li aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="mod-breadcrumbs__item breadcrumb-item active"><span itemprop="name">CyberPanel</span>					<meta itemprop="position" content="3">
+				</li>
+				</ol>
+</nav>
+</div>
+</div>
+
+
+
+<a href='javascript:' id='back-to-top'><i class='fa fa-chevron-up'></i></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>

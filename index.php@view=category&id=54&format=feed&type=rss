@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Início - RibaFS</title>
+		<description><![CDATA[]]></description>
+		<link>http://backup/ribamar/index.php?view=category&amp;id=54</link>
+		<lastBuildDate>Sat, 20 Apr 2024 23:40:45 -0300</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://backup/ribamar/ribamar/index.php?view=category&amp;id=54&amp;format=feed&amp;type=rss"/>
+		<language>pt-br</language>
+		<item>
+			<title>Gravação de Vídeos</title>
+			<link>http://backup/ribamar/index.php?view=article&amp;id=161&amp;catid=54</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php?view=article&amp;id=161&amp;catid=54</guid>
+			<description><![CDATA[<p> </p>
+<p>Playlist no Youtube</p>
+<p><a href="https://www.youtube.com/playlist?list=PLOZFjWTkIBhWDS0uy_HEFdSLxzSgyvqmp">https://www.youtube.com/playlist?list=PLOZFjWTkIBhWDS0uy_HEFdSLxzSgyvqmp</a></p>
+<p> </p>]]></description>
+			<category>Videos</category>
+			<pubDate>Sat, 30 Mar 2024 17:51:13 -0300</pubDate>
+		</item>
+		<item>
+			<title>Edição com Shotcut</title>
+			<link>http://backup/ribamar/index.php?view=article&amp;id=158&amp;catid=54</link>
+			<guid isPermaLink="true">http://backup/ribamar/index.php?view=article&amp;id=158&amp;catid=54</guid>
+			<description><![CDATA[<p> </p>
+<p><img class="float-none" style="display: block; margin-left: auto; margin-right: auto;" src="http://backup/ribamar/images/shotcut.png" width="512" height="512"></p>
+<h3>Apresentação base do vídeo de edição.</h3>
+<p><a href="http://backup/ribamar/down/videos/RoteiroVideosEdicao.pdf">Download</a></p>
+<p>Importante: ao finalizar a edição deve exportar o vídeo resultante:</p>
+<p>Arquivo - Exportar - Vídeo</p>
+<p>Então observe o painel de Edição da direita</p>
+<p><img class="float-none" style="display: block; margin-left: auto; margin-right: auto;" src="http://backup/ribamar/images/edicaoshotcut.png" width="466" height="218"></p>
+<p>Veja que auando ele concluir mostrará um pequeno tick verde à esquerda do nome.</p>
+<h3><strong>Capcut</strong></h3>
+<p>Outra ferramenta muito boa e parecida com o Shotcut é o Capcut, embora não tenha versão para Linux. Sua versão para Windows acho até um pouco maiis prática que o Shotcut.</p>
+<p><strong>Com versão até para celular:</strong></p>
+<p><a href="https://www.capcut.com/pt-br/">https://www.capcut.com/pt-br/</a> </p>
+<p>Windows<br><a href="https://www.capcut.com/download-guidance?download_url=https://lf16-capcut.faceulv.com/obj/capcutpc-packages-us/installer/capcut_capcutpc_0_1.2.6_installer.exe&amp;currentPage=article_page">https://www.capcut.com/download-guidance?download_url=https://lf16-capcut.faceulv.com/obj/capcutpc-packages-us/installer/capcut_capcutpc_0_1.2.6_installer.exe&amp;currentPage=article_page</a> </p>
+<p>Celular<br><a href="https://www.capcut.com/pt-br/tools/video-editing-app">https://www.capcut.com/pt-br/tools/video-editing-app</a> </p>
+<p><a href="https://www.youtube.com/watch?v=QJMuWByIzQY">https://www.youtube.com/watch?v=QJMuWByIzQY</a> </p>
+<p><a href="https://www.youtube.com/watch?v=MGM-pAo8ar4">https://www.youtube.com/watch?v=MGM-pAo8ar4</a> </p>
+<p><a href="https://www.youtube.com/watch?v=k_QKYNIrwpA">https://www.youtube.com/watch?v=k_QKYNIrwpA</a></p>
+<p> </p>
+<p> </p>]]></description>
+			<category>Videos</category>
+			<pubDate>Fri, 29 Mar 2024 10:30:03 -0300</pubDate>
+		</item>
+	</channel>
+</rss>

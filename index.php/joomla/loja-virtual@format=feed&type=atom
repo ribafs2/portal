@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-br">
+	<title type="text">Joomla - RibaFS</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="http://backup"/>
+	<id>http://backup/ribamar/index.php/joomla/loja-virtual</id>
+	<updated>2024-04-20T23:40:44-03:00</updated>
+	<author>
+		<name>RibaFS Portal</name>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://backup/ribamar/index.php/joomla/loja-virtual?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Ferramentas Auxiliares</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/joomla/loja-virtual/ferramentas-auxiliares"/>
+		<published>2024-02-23T08:03:56-03:00</published>
+		<updated>2024-02-23T08:03:56-03:00</updated>
+		<id>http://backup/ribamar/index.php/joomla/loja-virtual/ferramentas-auxiliares</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;float-none&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/canivete.jpg&quot; width=&quot;950&quot; height=&quot;1000&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ferramentas Auxiliares&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Uso o CMS Joomla para criar sites, mas acontece de querer implementar um recurso para o qual não conheço uma extensão free.&lt;br&gt;Neste caso procuro algo em Javascript ou em PHP, que existe muito. &lt;/p&gt;
+&lt;p&gt;Algo que me ajuda é a busca de projetos do Github&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/search&quot;&gt;https://github.com/search&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Quando encontro um projeto que me agrada eu crio um fork na minha conta do Github e faço alterações as vezes.&lt;/p&gt;
+&lt;p&gt;renlote - Pesquisando encontrei este pequeno script que alterei para renomear todos os arquivos da pasta atual de acordo com uma extensão&lt;br&gt;roda no linux e no Debian no WSL2 do Windows&lt;br&gt;aqui o script:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;echo &quot;Digite a extensão? Faça um backuup antes. Enter para continuar&quot;&lt;/em&gt;&lt;br&gt;&lt;em&gt;read ext&lt;/em&gt;&lt;br&gt;&lt;em&gt;ls -v | cat -n | while read n f; do mv -n &quot;$f&quot; &quot;$n.$ext&quot;; done&lt;/em&gt;&lt;br&gt;&lt;em&gt;echo &quot;Concluído&quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;Bulke-image-resize - redimensionara todas as imagens de uma pasta por uma extensão&lt;br&gt;&lt;a href=&quot;https://github.com/roytuts/php/tree/master/php-bulk-images-resize&quot;&gt;https://github.com/roytuts/php/tree/master/php-bulk-images-resize&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;galeria-video-bs - Galeria de vídeos em lor usando bootstrap, portanto responsiva&lt;br&gt;&lt;a href=&quot;https://github.com/ribafs/video-gallery-with-bootstrap&quot;&gt;https://github.com/ribafs/video-gallery-with-bootstrap&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;fileindex-php-bs - listagem de pastas com muitos e bons recursos, inclusive responsiva&lt;br&gt;&lt;a href=&quot;https://github.com/ribafs/SimplePHPFileIndexBS&quot;&gt;https://github.com/ribafs/SimplePHPFileIndexBS&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Atualmente é obrigatório que seja responsivo, pois a maioria dos usuários usa somente celular para ver os sites. &lt;br&gt;Neste caso o uso do bootstrap é uma boa.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo: &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;No caso eu customizo mudando o título, traduzo, etc.&lt;/p&gt;
+&lt;p&gt;Para a galeria de vídeos criei um arquivo php para gerar a lista de vídeos:&lt;br&gt;&lt;a href=&quot;https://github.com/ribafs/video-gallery-with-bootstrap/blob/main/codegen.php&quot;&gt;https://github.com/ribafs/video-gallery-with-bootstrap/blob/main/codegen.php&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Mudei o SimplePHPFileIndexBS para que mostre por padrão apenas 10 arquivos por página. O original era 60.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;float-none&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/canivete.jpg&quot; width=&quot;950&quot; height=&quot;1000&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ferramentas Auxiliares&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Uso o CMS Joomla para criar sites, mas acontece de querer implementar um recurso para o qual não conheço uma extensão free.&lt;br&gt;Neste caso procuro algo em Javascript ou em PHP, que existe muito. &lt;/p&gt;
+&lt;p&gt;Algo que me ajuda é a busca de projetos do Github&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/search&quot;&gt;https://github.com/search&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Quando encontro um projeto que me agrada eu crio um fork na minha conta do Github e faço alterações as vezes.&lt;/p&gt;
+&lt;p&gt;renlote - Pesquisando encontrei este pequeno script que alterei para renomear todos os arquivos da pasta atual de acordo com uma extensão&lt;br&gt;roda no linux e no Debian no WSL2 do Windows&lt;br&gt;aqui o script:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;echo &quot;Digite a extensão? Faça um backuup antes. Enter para continuar&quot;&lt;/em&gt;&lt;br&gt;&lt;em&gt;read ext&lt;/em&gt;&lt;br&gt;&lt;em&gt;ls -v | cat -n | while read n f; do mv -n &quot;$f&quot; &quot;$n.$ext&quot;; done&lt;/em&gt;&lt;br&gt;&lt;em&gt;echo &quot;Concluído&quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;Bulke-image-resize - redimensionara todas as imagens de uma pasta por uma extensão&lt;br&gt;&lt;a href=&quot;https://github.com/roytuts/php/tree/master/php-bulk-images-resize&quot;&gt;https://github.com/roytuts/php/tree/master/php-bulk-images-resize&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;galeria-video-bs - Galeria de vídeos em lor usando bootstrap, portanto responsiva&lt;br&gt;&lt;a href=&quot;https://github.com/ribafs/video-gallery-with-bootstrap&quot;&gt;https://github.com/ribafs/video-gallery-with-bootstrap&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;fileindex-php-bs - listagem de pastas com muitos e bons recursos, inclusive responsiva&lt;br&gt;&lt;a href=&quot;https://github.com/ribafs/SimplePHPFileIndexBS&quot;&gt;https://github.com/ribafs/SimplePHPFileIndexBS&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Atualmente é obrigatório que seja responsivo, pois a maioria dos usuários usa somente celular para ver os sites. &lt;br&gt;Neste caso o uso do bootstrap é uma boa.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo: &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;No caso eu customizo mudando o título, traduzo, etc.&lt;/p&gt;
+&lt;p&gt;Para a galeria de vídeos criei um arquivo php para gerar a lista de vídeos:&lt;br&gt;&lt;a href=&quot;https://github.com/ribafs/video-gallery-with-bootstrap/blob/main/codegen.php&quot;&gt;https://github.com/ribafs/video-gallery-with-bootstrap/blob/main/codegen.php&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Mudei o SimplePHPFileIndexBS para que mostre por padrão apenas 10 arquivos por página. O original era 60.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="Loja Virtual" />
+	</entry>
+	<entry>
+		<title>Projeto de criação de site</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/joomla/loja-virtual/projeto"/>
+		<published>2024-02-21T17:44:23-03:00</published>
+		<updated>2024-02-21T17:44:23-03:00</updated>
+		<id>http://backup/ribamar/index.php/joomla/loja-virtual/projeto</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;h3&gt;Projeto de criação de site&lt;/h3&gt;
+&lt;p&gt;&lt;img class=&quot;float-none&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/projeto.png&quot; width=&quot;1200&quot; height=&quot;675&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Um projeto simples ppara auxiliar na criação de projetos de criação de site&lt;/p&gt;
+&lt;p&gt;Criado com o LibreOffice&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/down/loja/projeto.odt&quot;&gt;Projeto&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;h3&gt;Projeto de criação de site&lt;/h3&gt;
+&lt;p&gt;&lt;img class=&quot;float-none&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/projeto.png&quot; width=&quot;1200&quot; height=&quot;675&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Um projeto simples ppara auxiliar na criação de projetos de criação de site&lt;/p&gt;
+&lt;p&gt;Criado com o LibreOffice&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/down/loja/projeto.odt&quot;&gt;Projeto&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="Loja Virtual" />
+	</entry>
+	<entry>
+		<title>Modelo de Contrato</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/joomla/loja-virtual/modelo-de-contrato"/>
+		<published>2024-02-21T17:32:51-03:00</published>
+		<updated>2024-02-21T17:32:51-03:00</updated>
+		<id>http://backup/ribamar/index.php/joomla/loja-virtual/modelo-de-contrato</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img class=&quot;float-none&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/contrato.jpg&quot; width=&quot;1080&quot; height=&quot;1080&quot;&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Modelo simples de Contrato de criação de site&lt;/p&gt;
+&lt;p&gt;Baixe e faça as devidas adaptações.&lt;/p&gt;
+&lt;p&gt;Obs: o contrato está no formato do LibreOffice.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/down/loja/contrato.odt&quot;&gt;Contrato&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;&lt;img class=&quot;float-none&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/contrato.jpg&quot; width=&quot;1080&quot; height=&quot;1080&quot;&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Modelo simples de Contrato de criação de site&lt;/p&gt;
+&lt;p&gt;Baixe e faça as devidas adaptações.&lt;/p&gt;
+&lt;p&gt;Obs: o contrato está no formato do LibreOffice.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/down/loja/contrato.odt&quot;&gt;Contrato&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="Loja Virtual" />
+	</entry>
+</feed>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-br">
+	<title type="text">VPS - RibaFS</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="http://backup"/>
+	<id>http://backup/ribamar/index.php/vps2/cyberpanel</id>
+	<updated>2024-04-20T23:40:44-03:00</updated>
+	<author>
+		<name>RibaFS Portal</name>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://backup/ribamar/index.php/vps2/cyberpanel?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Backup e Restore no CyberPanel</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/vps2/cyberpanel/backup-e-restore-no-cyberpanel"/>
+		<published>2024-02-10T05:18:17-03:00</published>
+		<updated>2024-02-10T05:18:17-03:00</updated>
+		<id>http://backup/ribamar/index.php/vps2/cyberpanel/backup-e-restore-no-cyberpanel</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/restore.png&quot; width=&quot;256&quot; height=&quot;256&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Por padrão o CyberPabel cria seus backups em uma subpasta 'backup' do domínio e não permite seu download via painel web.&lt;br /&gt;&lt;br /&gt;E para que possamos restaurar um backup, caso necessitemos, o arquivo de backup deve obrigatoriamente estar na pasta /home/backup, no caso ser movido de dominio/backup para /home/backup.&lt;/p&gt;
+&lt;p&gt;Veja como faço atualmente para facilitar estas operações e também trazer uma cópia do backup para o meu desktop.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Adiciono meu user para o grupo do root&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;sudo adduser ribafs root&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Criar o script no servidor&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;nano /home/ribafs/movebk.sh&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;#!/bin/bash&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;Enter domain/subdomain name to move backups to /home/backup. Enter to continue&quot;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;read domain&lt;/em&gt;&lt;br /&gt;&lt;em&gt;FILE=/home/$domain/backup/*.tar.gz&lt;/em&gt;&lt;br /&gt;&lt;em&gt;sudo mv $FILE /home/backup &lt;/em&gt;&lt;br /&gt;&lt;em&gt;sudo chown ribafs:root /home/backup/*&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Criar o script movecp no desktop&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo nano /usr/local/bin/movecp&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;#!/bin/bash&lt;/em&gt;&lt;br /&gt;&lt;em&gt;# Executar script do servidor via SSH remotamente&lt;/em&gt;&lt;br /&gt;&lt;em&gt;ssh -p 65522 -tt ribafs@ribamar.net.br &quot;sudo sh /home/ribafs/movebk.sh&quot;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;rsync -av --ignore-existing --progress -e 'ssh -p 65522' ribafs@ribamar.net.br:/home/backup/* /backup/transp/backup/&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;Backup on desktop&quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo chmod +x /usr/local/bin/movecp&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;Donos e permissões de arquivos e pastas no servidor do CyberPanel.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Quando criamos um site, ele cria uma pasta com o nome do domínio na pasta /home. Esta pasta tem como dono e grupo algo como domin3454 e as permissões são bem restritivas, 711, drwx--x--x&lt;/p&gt;
+&lt;p&gt;O CP é muito exigente nestes aspectos. Tanto que de mudarmos o dono do arquivo de backup ou da pasta, já não mais conseguiremos fazer novos backups, pois ele verifica isso antes.&lt;/p&gt;
+&lt;p&gt;Caso alteremos alguma permissão ou dono, precisamos voltar ao que era antes.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/restore.png&quot; width=&quot;256&quot; height=&quot;256&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Por padrão o CyberPabel cria seus backups em uma subpasta 'backup' do domínio e não permite seu download via painel web.&lt;br /&gt;&lt;br /&gt;E para que possamos restaurar um backup, caso necessitemos, o arquivo de backup deve obrigatoriamente estar na pasta /home/backup, no caso ser movido de dominio/backup para /home/backup.&lt;/p&gt;
+&lt;p&gt;Veja como faço atualmente para facilitar estas operações e também trazer uma cópia do backup para o meu desktop.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Adiciono meu user para o grupo do root&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;sudo adduser ribafs root&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Criar o script no servidor&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;nano /home/ribafs/movebk.sh&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;#!/bin/bash&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;Enter domain/subdomain name to move backups to /home/backup. Enter to continue&quot;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;read domain&lt;/em&gt;&lt;br /&gt;&lt;em&gt;FILE=/home/$domain/backup/*.tar.gz&lt;/em&gt;&lt;br /&gt;&lt;em&gt;sudo mv $FILE /home/backup &lt;/em&gt;&lt;br /&gt;&lt;em&gt;sudo chown ribafs:root /home/backup/*&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Criar o script movecp no desktop&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo nano /usr/local/bin/movecp&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;#!/bin/bash&lt;/em&gt;&lt;br /&gt;&lt;em&gt;# Executar script do servidor via SSH remotamente&lt;/em&gt;&lt;br /&gt;&lt;em&gt;ssh -p 65522 -tt ribafs@ribamar.net.br &quot;sudo sh /home/ribafs/movebk.sh&quot;&lt;/em&gt;&lt;br /&gt;&lt;em&gt;rsync -av --ignore-existing --progress -e 'ssh -p 65522' ribafs@ribamar.net.br:/home/backup/* /backup/transp/backup/&lt;/em&gt;&lt;br /&gt;&lt;em&gt;echo &quot;Backup on desktop&quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;sudo chmod +x /usr/local/bin/movecp&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;strong&gt;Donos e permissões de arquivos e pastas no servidor do CyberPanel.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Quando criamos um site, ele cria uma pasta com o nome do domínio na pasta /home. Esta pasta tem como dono e grupo algo como domin3454 e as permissões são bem restritivas, 711, drwx--x--x&lt;/p&gt;
+&lt;p&gt;O CP é muito exigente nestes aspectos. Tanto que de mudarmos o dono do arquivo de backup ou da pasta, já não mais conseguiremos fazer novos backups, pois ele verifica isso antes.&lt;/p&gt;
+&lt;p&gt;Caso alteremos alguma permissão ou dono, precisamos voltar ao que era antes.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="CyberPanel" />
+	</entry>
+	<entry>
+		<title>Change site domain on CyberPanel</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/vps2/cyberpanel/change-site-domain-on-cyberpanel"/>
+		<published>2024-02-03T16:26:50-03:00</published>
+		<updated>2024-02-03T16:26:50-03:00</updated>
+		<id>http://backup/ribamar/index.php/vps2/cyberpanel/change-site-domain-on-cyberpanel</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/dominio.webp&quot; width=&quot;800&quot; height=&quot;533&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Change a website domain in CyberPanel&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I have a website with the Joomla CMS, which used the &lt;strong&gt;test.ribamar.net.br&lt;/strong&gt; subdomain. So I decided to change to &lt;strong&gt;loja.ribamar.net.br&lt;/strong&gt;. CyberPanel doesn't do this via the web interface and I don't know how, not even via the server terminal.&lt;/p&gt;
+&lt;p&gt;So I made a backup oftestes.ribamar.net.br and downloaded this backup to my desktop.&lt;br /&gt;I unzipped it. It expands to multiple files and folders.&lt;br /&gt;I accessed the public_html folder and compressed it as loja.zip.&lt;br /&gt;I also got the .sql from the bank.&lt;/p&gt;
+&lt;p&gt;I went to CP and created a new website, now for loja.ribamar.net.br.&lt;br /&gt;I also created the bank for him, loja_db.&lt;/p&gt;
+&lt;p&gt;List sites - loja.ribamar.net.br - File Manager.&lt;br /&gt;I opened the loja.ribamar.net.br - public_html folder and uploaded the loja.zip and extracted it,&lt;br /&gt;I went to phpmyadmin and imported the backup sql into the loja_db database.&lt;br /&gt;&lt;br /&gt;I went back to the File Manager - I edited configuration.php and adjusted the database data and also $log_path and $tmp_path.&lt;br /&gt;&lt;br /&gt;It worked.&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/dominio.webp&quot; width=&quot;800&quot; height=&quot;533&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Change a website domain in CyberPanel&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I have a website with the Joomla CMS, which used the &lt;strong&gt;test.ribamar.net.br&lt;/strong&gt; subdomain. So I decided to change to &lt;strong&gt;loja.ribamar.net.br&lt;/strong&gt;. CyberPanel doesn't do this via the web interface and I don't know how, not even via the server terminal.&lt;/p&gt;
+&lt;p&gt;So I made a backup oftestes.ribamar.net.br and downloaded this backup to my desktop.&lt;br /&gt;I unzipped it. It expands to multiple files and folders.&lt;br /&gt;I accessed the public_html folder and compressed it as loja.zip.&lt;br /&gt;I also got the .sql from the bank.&lt;/p&gt;
+&lt;p&gt;I went to CP and created a new website, now for loja.ribamar.net.br.&lt;br /&gt;I also created the bank for him, loja_db.&lt;/p&gt;
+&lt;p&gt;List sites - loja.ribamar.net.br - File Manager.&lt;br /&gt;I opened the loja.ribamar.net.br - public_html folder and uploaded the loja.zip and extracted it,&lt;br /&gt;I went to phpmyadmin and imported the backup sql into the loja_db database.&lt;br /&gt;&lt;br /&gt;I went back to the File Manager - I edited configuration.php and adjusted the database data and also $log_path and $tmp_path.&lt;br /&gt;&lt;br /&gt;It worked.&lt;/p&gt;</content>
+		<category term="CyberPanel" />
+	</entry>
+	<entry>
+		<title>Backup para o Desktop</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/vps2/cyberpanel/backup-para-o-desktop"/>
+		<published>2024-01-27T05:09:30-03:00</published>
+		<updated>2024-01-27T05:09:30-03:00</updated>
+		<id>http://backup/ribamar/index.php/vps2/cyberpanel/backup-para-o-desktop</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/backup.jpg&quot; width=&quot;450&quot; height=&quot;359&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Baixando backup dos sites para o desktop no CyberPanel&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Faça o ajuste do user, porta, etc.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Acessar o servido &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;ssh -p porta user@IP&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Adicionar user para o grupo do root&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;sudo su&lt;/p&gt;
+&lt;p&gt;adduser ribafs root&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mudar o dono de /home/backup assim:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;chown -R ribafs:root /home/ribafs&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Criar no servidor&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;nano /usr/local/bin/perms&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;#!/bin/sh&lt;br /&gt;clear;&lt;br /&gt;# &quot;Execute com o root.&quot;&lt;br /&gt;chown -R ribafs:root /home/backup;&lt;br /&gt;#find /home/backup -type f -exec chmod 664 {} \;&lt;br /&gt;echo &quot;Aguarde...&quot;&lt;br /&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;chmod +x /usr/local/bin/perms&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Criar no desktop&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;em&gt;sudo su&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;em&gt;nano /usr/local/bin/backups&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;em&gt;ssh -p 60022 -t ribafs@ribamar.net.br &quot;sudo /usr/local/bin/perms&quot;&lt;br /&gt;rsync -av --ignore-existing --progress -e 'ssh -p 60022' ribafs@ribamar.net.br:/home/backup/* /home/ribafs/backup/&lt;br /&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;em&gt;chmod +x /usr/local/bin/backups&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Baixando os backups para a pasta /home/ribafs/backup do desktop&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;backups&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/backup.jpg&quot; width=&quot;450&quot; height=&quot;359&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Baixando backup dos sites para o desktop no CyberPanel&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Faça o ajuste do user, porta, etc.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Acessar o servido &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;ssh -p porta user@IP&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Adicionar user para o grupo do root&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;sudo su&lt;/p&gt;
+&lt;p&gt;adduser ribafs root&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mudar o dono de /home/backup assim:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;chown -R ribafs:root /home/ribafs&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Criar no servidor&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;nano /usr/local/bin/perms&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;#!/bin/sh&lt;br /&gt;clear;&lt;br /&gt;# &quot;Execute com o root.&quot;&lt;br /&gt;chown -R ribafs:root /home/backup;&lt;br /&gt;#find /home/backup -type f -exec chmod 664 {} \;&lt;br /&gt;echo &quot;Aguarde...&quot;&lt;br /&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;chmod +x /usr/local/bin/perms&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Criar no desktop&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;em&gt;sudo su&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;em&gt;nano /usr/local/bin/backups&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;em&gt;ssh -p 60022 -t ribafs@ribamar.net.br &quot;sudo /usr/local/bin/perms&quot;&lt;br /&gt;rsync -av --ignore-existing --progress -e 'ssh -p 60022' ribafs@ribamar.net.br:/home/backup/* /home/ribafs/backup/&lt;br /&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;em&gt;chmod +x /usr/local/bin/backups&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Baixando os backups para a pasta /home/ribafs/backup do desktop&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;backups&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="CyberPanel" />
+	</entry>
+	<entry>
+		<title>Usability and Security on VPS with CyberPanel</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/vps2/cyberpanel/usability-and-security-on-vps-with-cyberpanel"/>
+		<published>2024-01-27T04:36:35-03:00</published>
+		<updated>2024-01-27T04:36:35-03:00</updated>
+		<id>http://backup/ribamar/index.php/vps2/cyberpanel/usability-and-security-on-vps-with-cyberpanel</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/cp.png&quot; width=&quot;1185&quot; height=&quot;787&quot; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;strong&gt;Improving Usability and Security on VPS with &lt;mark data-markjs=&quot;true&quot;&gt;CyberPanel&lt;/mark&gt;&lt;/strong&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/vps/usability-and-security-on-vps-with-cyberpanel?highlight=WyJjeWJlcnBhbmVsIl0=&quot;&gt;https://ribamar.net.br/index.php/treinamentos/vps/usability-and-security-on-vps-with-cyberpanel&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/cp.png&quot; width=&quot;1185&quot; height=&quot;787&quot; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;strong&gt;Improving Usability and Security on VPS with &lt;mark data-markjs=&quot;true&quot;&gt;CyberPanel&lt;/mark&gt;&lt;/strong&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/vps/usability-and-security-on-vps-with-cyberpanel?highlight=WyJjeWJlcnBhbmVsIl0=&quot;&gt;https://ribamar.net.br/index.php/treinamentos/vps/usability-and-security-on-vps-with-cyberpanel&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="CyberPanel" />
+	</entry>
+	<entry>
+		<title>Restore CyberPanel Website</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/vps2/cyberpanel/restore-cyberpanel-website"/>
+		<published>2024-01-27T04:31:57-03:00</published>
+		<updated>2024-01-27T04:31:57-03:00</updated>
+		<id>http://backup/ribamar/index.php/vps2/cyberpanel/restore-cyberpanel-website</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/restore.png&quot; width=&quot;544&quot; height=&quot;544&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Restore website in cyberpanel without leaving the desktop&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/vps/restore-cyberpanel-website&quot;&gt;https://ribamar.net.br/index.php/treinamentos/vps/restore-cyberpanel-website&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/restore.png&quot; width=&quot;544&quot; height=&quot;544&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Restore website in cyberpanel without leaving the desktop&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/vps/restore-cyberpanel-website&quot;&gt;https://ribamar.net.br/index.php/treinamentos/vps/restore-cyberpanel-website&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="CyberPanel" />
+	</entry>
+	<entry>
+		<title>Treinamento</title>
+		<link rel="alternate" type="text/html" href="http://backup/ribamar/index.php/vps2/cyberpanel/treinamento"/>
+		<published>2024-01-27T04:27:20-03:00</published>
+		<updated>2024-01-27T04:27:20-03:00</updated>
+		<id>http://backup/ribamar/index.php/vps2/cyberpanel/treinamento</id>
+		<author>
+			<name>Ribamar FS</name>
+		</author>
+		<summary type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/cp2.png&quot; width=&quot;529&quot; height=&quot;529&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Treinamento sobre o CyberPanel com o Contabo:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/vps/vps-revenda&quot;&gt;https://ribamar.net.br/index.php/treinamentos/vps/vps-revenda&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;http://backup/ribamar/images/cp2.png&quot; width=&quot;529&quot; height=&quot;529&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Treinamento sobre o CyberPanel com o Contabo:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://backup/ribamar/index.php/treinamentos/vps/vps-revenda&quot;&gt;https://ribamar.net.br/index.php/treinamentos/vps/vps-revenda&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</content>
+		<category term="CyberPanel" />
+	</entry>
+</feed>

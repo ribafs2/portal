@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="j5" xml:lang="pt-br" lang="pt-br" dir="ltr">
+
+<head>
+  
+  <meta charset="utf-8">
+	<meta name="author" content="Ribamar FS">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>Servidor no DigitalOcean - RibaFS</title>
+	<link href="../../../images/ribafscircularmobile.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<link href="../../../plugins/system/t4/themes/base/vendors/font-awesome5/css/all.min.css@5b7441.css" rel="stylesheet" />
+	<link href="../../../plugins/system/t4/themes/base/vendors/font-awesome/css/font-awesome.min.css@5b7441.css" rel="stylesheet" />
+	<link href="../../../templates/t4_bs5_blank/css/extras/com_docman.css@5b7441.css" rel="stylesheet" />
+	<link href="../../../templates/t4_bs5_blank/css/extras/com_easyblog.css@5b7441.css" rel="stylesheet" />
+	<link href="../../../templates/t4_bs5_blank/css/extras/com_easydiscuss.css@5b7441.css" rel="stylesheet" />
+	<link href="../../../templates/t4_bs5_blank/css/extras/com_virtuemart.css@5b7441.css" rel="stylesheet" />
+	<link href="../../../templates/t4_bs5_blank/css/extras/com_kunena.css@5b7441.css" rel="stylesheet" />
+	<link href="../../../templates/t4_bs5_blank/css/extras/com_jomsocial.css@5b7441.css" rel="stylesheet" />
+	<link href="../../../media/vendor/joomla-custom-elements/css/joomla-alert.min.css@0.2.0.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Inter%3A300%2C400%2C500%2C600%2C700%2C800" rel="stylesheet" />
+	<link href="../../../templates/t4_bs5_blank/css/template.css@1872e6e98a6bc7aa7eebc1b41e23bc2e.css" rel="stylesheet" />
+	<link href="../../../media/t4/css/18-sub.css@d96cbba6820281d3c50994ac41ae317b.css" rel="stylesheet" />
+<script src="../../../media/vendor/jquery/js/jquery.min.js@3.7.1"></script>
+	<script src="../../../media/legacy/js/jquery-noconflict.min.js@504da4"></script>
+	<script src="../../../media/vendor/jquery-migrate/js/jquery-migrate.min.js@3.4.1"></script>
+	<script type="application/json" class="joomla-script-options new">{"joomla.jtext":{"ERROR":"Erro","MESSAGE":"Mensagem","NOTICE":"Aviso","WARNING":"Atenção","JCLOSE":"Fechar","JOK":"OK","JOPEN":"Abrir"},"system.paths":{"root":"/ribamar","rootFull":"http://backup/ribamar/","base":"/ribamar","baseFull":"http://backup/ribamar/"},"csrf.token":"01979e17a23725f5a4644cdab8431a24"}</script>
+	<script src="../../../media/system/js/core.min.js@83f2c9"></script>
+	<script src="../../../media/vendor/webcomponentsjs/js/webcomponents-bundle.min.js@2.8.0" nomodule defer></script>
+	<script src="../../../media/system/js/joomla-hidden-mail.min.js@80d9c7" type="module"></script>
+	<script src="../../../media/system/js/messages.min.js@7a5169" type="module"></script>
+	<script src="../../../media/vendor/bootstrap/js/dropdown.min.js@5.3.2" type="module"></script>
+	<script src="../../../media/vendor/bootstrap/js/collapse.min.js@5.3.2" type="module"></script>
+	<script src="../../../templates/t4_bs5_blank/js/template.js"></script>
+	<script src="../../../plugins/system/t4/themes/base/js/base.js@5b7441"></script>
+	<script src="../../../plugins/system/t4/themes/base/js/megamenu.js"></script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"http://backup/ribamar/#/schema/Organization/base","name":"RibaFS","url":"http://backup/ribamar/"},{"@type":"WebSite","@id":"http://backup/ribamar/#/schema/WebSite/base","url":"http://backup/ribamar/","name":"RibaFS","publisher":{"@id":"http://backup/ribamar/#/schema/Organization/base"}},{"@type":"WebPage","@id":"http://backup/ribamar/#/schema/WebPage/base","url":"http://backup/ribamar/index.php/servidores/vps/servidor-no-digitalocean","name":"Servidor no DigitalOcean - RibaFS","isPartOf":{"@id":"http://backup/ribamar/#/schema/WebSite/base"},"about":{"@id":"http://backup/ribamar/#/schema/Organization/base"},"inLanguage":"pt-BR","breadcrumb":{"@id":"http://backup/ribamar/#/schema/BreadcrumbList/17"}},{"@type":"Article","@id":"http://backup/ribamar/#/schema/com_content/article/25","name":"Servidor no DigitalOcean","headline":"Servidor no DigitalOcean","inLanguage":"pt-BR","author":{"@type":"Person","name":"Ribamar FS"},"articleSection":"vps","dateCreated":"2024-01-04T23:17:25+00:00","interactionStatistic":{"@type":"InteractionCounter","userInteractionCount":85},"isPartOf":{"@id":"http://backup/ribamar/#/schema/WebPage/base"}}]}</script>
+
+
+  <meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"/>
+  <style  type="text/css">
+    @-webkit-viewport   { width: device-width; }
+    @-moz-viewport      { width: device-width; }
+    @-ms-viewport       { width: device-width; }
+    @-o-viewport        { width: device-width; }
+    @viewport           { width: device-width; }
+  </style>
+  <meta name="HandheldFriendly" content="true"/>
+  <meta name="apple-mobile-web-app-capable" content="YES"/>
+  <!-- //META FOR IOS & HANDHELD -->
+  
+</head>
+
+<body class="site-default navigation-default theme-architect layout-default nav-breakpoint-lg com_content view-article item-103 loaded-bs5" data-jver="5">
+  
+  
+  <main>
+    <div class="t4-wrapper">
+      <div class="t4-content">
+        <div class="t4-content-inner">
+          
+<div id="t4-header" class="t4-section  t4-header"><!-- HEADER BLOCK -->
+<header class="header-block header-block-2">
+  <div class="container-xxl">
+    <div class="header-wrap d-flex align-items-center justify-content-between collapse-static">
+      <div class="navbar-brand logo-image logo-control">
+    <a href="../../../index.html" title="RibaFS">
+            <img class="logo-img-sm d-block d-sm-none" src="../../../images/ribafscircularmobile.png" alt="RibaFS" />
+      	
+          <img class="logo-img d-none d-sm-block" width="67" height="68" src="../../../images/ribafscircularmobile.png" alt="RibaFS" />
+    
+    </a>
+  </div>
+
+
+      <div class="t4-navbar mx-auto collapse-static">
+        
+<nav class="navbar navbar-expand-lg">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#t4-megamenu-mainmenu" aria-controls="t4-megamenu-mainmenu" aria-expanded="false" aria-label="Toggle navigation" style="display: none;">
+    <i class="fa fa-bars toggle-bars"></i>
+</button>
+	<div id="t4-megamenu-mainmenu" class="t4-megamenu collapse navbar-collapse slide animate" data-duration="400">
+
+<ul class="nav navbar-nav level0"  itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+<li class="nav-item default" data-id="101" data-level="1"><a href="../../../index.php.html" itemprop="url" class="nav-link"><span itemprop="name"><span class="menu-item-title">Início</span></span></a></li><li class="nav-item" data-id="240" data-level="1"><a href="../../frontend.html" itemprop="url" class="nav-link"><span itemprop="name"><span class="menu-item-title">Frontend</span></span></a></li><li class="nav-item" data-id="207" data-level="1"><a itemprop="url" href="javascript:;" class="nav-header  nav-link" >
+	<span itemprop="name"><span class="menu-item-title">PHP</span></span>
+	</a>
+</li><li class="nav-item" data-id="205" data-level="1"><a href="../../joomla.html" itemprop="url" class="nav-link"><span itemprop="name"><span class="menu-item-title">Joomla</span></span></a></li><li class="nav-item" data-id="206" data-level="1"><a itemprop="url" href="javascript:;" class="nav-header  nav-link" >
+	<span itemprop="name"><span class="menu-item-title">Laravel</span></span>
+	</a>
+</li><li class="nav-item" data-id="166" data-level="1"><a href="../../vps2.html" itemprop="url" class="nav-link"><span itemprop="name"><span class="menu-item-title">VPS</span></span></a></li><li class="nav-item current active" data-id="103" data-level="1"><a href="../../servidores.html" itemprop="url" class="nav-link" aria-current="page"><span itemprop="name"><span class="menu-item-title">Servidores</span></span></a></li><li class="nav-item" data-id="106" data-level="1"><a href="../../contato.html" itemprop="url" class="nav-link"><span itemprop="name"><span class="menu-item-title">Contato</span></span></a></li></ul></div>
+</nav>
+
+      </div>
+
+      <div class="t4-header-r d-flex align-items-center">
+        
+        <nav class="navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#t4-megamenu-mainmenu" aria-controls="t4-megamenu-mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars toggle-bars"></i>
+    </button>
+</nav>
+        
+      </div>
+    </div>
+  </div>
+</header>
+<!-- // HEADER BLOCK --></div>
+
+
+
+<div id="t4-main-body" class="t4-section  t4-main-body">
+<div class="t4-section-inner container"><div class="t4-row row">
+<div class="t4-col col-md">
+<div id="system-message-container" aria-live="polite"></div>
+<div class="com-content-article item-page" itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="pt-BR">
+
+	
+	
+		
+		<div class="page-header">
+					<h2 itemprop="headline">
+				Servidor no DigitalOcean			</h2>
+		
+					
+		
+		
+		
+	</div>
+	
+	<div class="article-aside">
+
+				<dl class="article-info text-muted">
+
+	
+		<dt class="article-info-term">
+							Detalhes					</dt>
+
+					<dd class="createdby" itemprop="author" itemscope itemtype="https://schema.org/Person">
+					<span  class="author-img">
+				<a href="../author/ribafs.html" title="Ribamar FS">
+				<img src="http://backup/ribamar//media/t4/author/default.jpg" alt="Ribamar FS">				</a>
+				</span>
+				By <a href="../author/ribafs.html" itemprop="url"><span itemprop="name">Ribamar FS</span></a>	</dd>
+
+<span style="display: none;" itemprop="publisher" itemtype="http://schema.org/Organization" itemscope>
+			<span itemprop="name">Ribamar FS</span></span>
+		
+		
+					<dd class="category-name">
+						Categoria: <a href="../vps.html" itemprop="genre">vps</a>	</dd>		
+		
+					<dd class="published">
+	<span class="fa fa-calendar" aria-hidden="true"></span>
+	<time datetime="2024-01-04T20:17:25-03:00" itemprop="datePublished">
+		04 Janeiro 2024	</time>
+</dd>
+		
+	
+			
+		
+					<dd class="hits">
+	<span class="fa fa-eye" aria-hidden="true"></span>
+	<meta itemprop="interactionCount" content="UserPageVisits:85">
+	Acessos: 85</dd>
+			</dl>
+		
+						
+	</div>
+
+	
+		
+				
+			
+		
+	
+	<div itemprop="articleBody" class="article-body">
+		<p><img style="display: block; margin-left: auto; margin-right: auto;" src="../../../images/vps.webp" width="665" height="440" /></p>
+<p><strong>Pequeno tutorial para a</strong></p>
+<p>Criação de um servidor no Digital Ocean</p>
+<p>Importante: obrigatório ter um cartão de crédito internacional.</p>
+<p>O DO chama seu servidor de droplet (gotícula).</p>
+<p>Acessar</p>
+<p><a href="https://www.digitalocean.com/">https://www.digitalocean.com/</a></p>
+<p>Clicar acima em Pricing</p>
+<p>Role a tela</p>
+<p>Iremos usar:</p>
+<p>Droplets</p>
+<p>Starting at</p>
+<p>$4/month</p>
+<p>Criar uum servidor mínimo, que inicia com US$ 4/mês</p>
+<p>Logo abaixo clique em </p>
+<p><strong>View pricing -&gt;</strong></p>
+<p>Veja o que dizem:</p>
+<p><strong>Droplets</strong></p>
+<p>Implante Droplets (VMs na nuvem) em segundos. Execute qualquer carga de trabalho, desde aplicativos de missão crítica com uso intensivo de CPU, memória e armazenamento até sites de baixo tráfego.</p>
+<p>Veja nosso https://docs.digitalocean.com/products/droplets/concepts/choosing-a-plan/  para saber qual plano Droplet é certo para você ou fale com um expert:<br /><a href="https://www.digitalocean.com/company/contact/sales?referrer=pricing/droplets">https://www.digitalocean.com/company/contact/sales?referrer=pricing/droplets</a></p>
+<p>Aqui já começa o DO com sua forte c aracterística de documentação. É a que mais se empenha em produzir tutoriais sobre seus serviços e para cada tipo de distribuição que oferece.</p>
+<p>Abaixo os servidores são agrupados por tipos e seus respectivos preços:<br /><a href="https://www.digitalocean.com/pricing/droplets">https://www.digitalocean.com/pricing/droplets</a></p>
+<p>Aqui usarei um </p>
+<p><strong>Basic Droplets</strong></p>
+<p>Os Droplets básicos têm o uso de CPU mais eficiente a um custo menor para cargas de trabalho que subutilizam threads dedicados. Eles são ideais para aplicativos em rajadas que podem lidar com níveis variáveis de CPU.</p>
+<p>Com este servidor podemos usar uma das distribuições linux, instalar o LAMP ou LEMP e abrigar um site ou aplicativo simples. Já fiz isso algumas vezes.</p>
+<p><strong>Vou usar como exemplo o servidor mais simples e mais barato:</strong></p>
+<p>Memory      vCPU    Transfer    SSD     $/hr        $/mo <br />512 MiB     1 vCPU  500 GiB     10 GiB    $0,00595    $4,00</p>
+<p>No caso, um servidor pelo qual pagaremos 4 dólares por mês. Caso já saibamos que nosso site/aplicativo precisa de mais recurso então devemos escolher um perfil mais adequado. Algumas características podem ser melhoradas depois que o servidor for instalado sem destrução dos dados, mas outras precisam que criemos um novo servidor destruindo o atual.</p>
+<p>Veja que tem um pequeno botão azup à direita com uma seta para a direita. Clique nele para escolher  este servidor e continuar.</p>
+<p>Caso você ainda não tenha uma conta no DO abrirá um form para que crie a conta. Eu prefiro criar com meu email mas fique a vontade. Caso tenha escolhido email confirme sua senha. Quando abrir o e-mail para confirmação e clicar no link aparecerá uma tela para que selecione o tipo de uso que fará do servidor. No caso eu selecionei o primeiro, Deploy a web application. Então outra tela com How would you like to Deploy your Web Application?, onde selecionei PHP.</p>
+<p>Confirme seu e-mail</p>
+<p>Preencha o form</p>
+<p>Verificar cartão ou paypal</p>
+<p>Escolhi Paypal<br />ele pede para selecionar um valor para começar<br />escolho US$ 5 e clico abaixo em Paypal</p>
+<p><br />Após confirmar o depósito somos levados para o painel administrativo para a criação do servidor/droplet.<br />Tutorial - https://docs.digitalocean.com/products/droplets/how-to/create/  e <a href="https://docs.digitalocean.com/products/droplets/how-to/resize/">https://docs.digitalocean.com/products/droplets/how-to/resize/</a></p>
+<p>Deploy a PHP (LAMP) server</p>
+<p>Choose a location for your Droplet<br />Mantive NYC3</p>
+<p>Droplet Plan<br />Mantenha US$ 6/mo</p>
+<p>Então ele mostra</p>
+<p>The following disk image will be installed for you with the following contents<br />PHP (LAMP) icon</p>
+<p>PHP (LAMP)</p>
+<p>V Latest OS Ubuntu 22.04<br />Package contents: Apache, MySQL server, PHP, Fail2ban, Postfix, Certbot</p>
+<p>Muito bom, mas não quero isso, quero selecionar o que meu servidor vai usar.</p>
+<p>Veja que à direita de Deploy a PHP (LAMP) server aparece um link </p>
+<p>Select a different framework</p>
+<p>Clique nele</p>
+<p>Clique agora em</p>
+<p>Deploy a Ubuntu server 22.04</p>
+<p>Mas ainda não é o que quero, quero usar o Debian, que é mais econômico em termos de recursos e mais estável.</p>
+<p><strong>Authentication</strong><br />Esta parte é muito importante, onde temos opções de criar uma chave do SSH do nosso desktop e enviar para o DO ou também de criar uma senha que usaremos com o usuário root para gerenciar o servidor e acessar  o mesmo via SSH do nosso desktop. Eu uso linux em meu desktop e isso fica bem tranquilo, mas também podemos usar outro sistema operacional. Se usando linux minha sugestão é que instale o https://git-scm.com/download/win, no caso, após instalar use o Git Bash.</p>
+<p>Caso escolha enviar a chave do SSH o servidor criado somente poderá ser acessado pelo desktop onde gerou a chave. Se chegar a formatar e instalar nova versão da distro ou do SO não  mais  poderá acessar o servidor. Apanhei um pouco para descobrir isso, fica msis seguro mas tem isto. Para evitar isso eu crio atualmente uma senha para o root, depois adiciono um usuário comum com poderes de sudo, configuro o SSH mudando a porta padrão, etc. Assim consigo acessar inclusive de outros computadores.</p>
+<p>Selecione </p>
+<p>Password</p>
+<p>A senha não pode terminar com número nem com caractere  especial.</p>
+<p>Veja quue não conseguimos criar um servidor com o prometido preço de US$ 4/mo e ficou em 6/mo. Clicar em Create abaixo</p>
+<p>Como eu tenho uma conta no DO sei que podemos criar servidor usando o Debian.</p>
+<p>Como quero criar o meu servidor com Debian, então destruirei este que criamos para criar outro.</p>
+<p>Create<br />Droplets</p>
+<p>Agora sim, poderei escolher o Debian ou outras distros.</p>
+<p><strong>Debian - 12 64<br /></strong></p>
+<p>Basic<br />Regular<br />6/mo<br />Password<br />Hostname - debian</p>
+<p>Create Droplet</p>
+<p><strong>Aguarde enquanto ele cria o servidor</strong></p>
+<p>Veja que a direita do nome do servidor aparece seu IP</p>
+<p>Agora jjá pode acessar o servidor usando SSH</p>
+<p>ssh <joomla-hidden-mail  is-link="1" is-email="1" first="cm9vdA==" last="MTY0LjkyLjk0LjE3NA==" text="cm9vdEAxNjQuOTIuOTQuMTc0" base="/ribamar" >Este endereço de email está sendo protegido de spambots. Você precisa do JavaScript ativado para vê-lo.</joomla-hidden-mail></p>
+<p>Forneça a senha que deu na criação do servidor.</p>
+<p>Caso queira destruir o servidor à direita clique nos 3 pontinhos e destroy<br />Clique no botão<br />Destroy this Droplet<br />Digite o hostname, no caso debian e em Destroy</p>
+<p>Para trabalhar com um servidor, geralmente precisamos apotar o nosso domínio para os servidores do DO.<br />Acesse <br />Networking<br />Domains<br />Entre com seu domínio e o adicione.<br />Após criar os registros básicos no DNS, pegue os endereços dos servidores de DNS do DO e configure na administração do seu domínio.</p>
+<p>A intenção deste tutorial é ajudar os que ainda não criaram um servidor no DO e caso queira criar agora, estimulá-lo a usar o meu cupom do DO, mas fique bem a vontade;</p>
+<p>P.S.:</p>
+<p>Estou planejando criar um treinamento em VPS com DigitalOcean.</p>
+<p><strong>Referências</strong></p>
+<p><a href="https://docs.digitalocean.com/products/">https://docs.digitalocean.com/products/</a></p>
+<p><a href="https://docs.digitalocean.com/developer-center/droplets/">https://docs.digitalocean.com/developer-center/droplets/</a></p>
+<p><a href="https://www.digitalocean.com/community/tutorials">https://www.digitalocean.com/community/tutorials</a></p>
+<p><a href="https://docs.digitalocean.com/products/droplets/">https://docs.digitalocean.com/products/droplets/</a></p>
+<p><a href="https://docs.digitalocean.com/products/networking/dns/">https://docs.digitalocean.com/products/networking/dns/</a></p>
+<p><a href="https://docs.digitalocean.com/reference/api/">https://docs.digitalocean.com/reference/api/</a></p>
+<p><strong>Obs</strong>: alguns  passos podem ser diferentes com você.</p> 	</div>
+
+	
+	
+	
+		
+	
+		</div>
+
+</div>
+<div class="t4-col sidebar-l col-sm-12 col-lg-3 order-md-first">
+<div class="t4-module module " id="Mod112"><div class="module-inner"><h3 class="module-title "><span>Novidades</span></h3><div class="module-ct"><ul class="mod-articleslatest latestnews mod-list">
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="../../frontend/seu-projeto-precisa.html" itemprop="url">
+            <span itemprop="name">
+                Seu projeto precisa?            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="../../joomla/fabrik-4-e-book.html" itemprop="url">
+            <span itemprop="name">
+                Fabrik 4 E-book e Vídeo            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="http://backup/ribamar/index.php/servidores/gravacao-de-videos" itemprop="url">
+            <span itemprop="name">
+                Gravação de Vídeos            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="../../joomla/instalacao-do-joomla-5-0-3.html" itemprop="url">
+            <span itemprop="name">
+                Instalação do Joomla 5.0.3            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="../../joomla/pt-br-para-joomla-5-0-3.html" itemprop="url">
+            <span itemprop="name">
+                pt-BR para Joomla 5.0.3            </span>
+        </a>
+    </li>
+</ul>
+</div></div></div><div class="t4-module module " id="Mod121"><div class="module-inner"><h3 class="module-title "><span>Pensamento do dia</span></h3><div class="module-ct"><div id="pensamentos">Há pessoas que choram por saberem que as rosas têm espinhos; outras há que sorriem por saberem que os espinhos têm rosas. (Autor desconhecido)
+</div></ br></div></div></div>
+</div>
+<div class="t4-col sidebar-r col-sm-12 col-lg-3">
+<div class="t4-module module " id="Mod113"><div class="module-inner"><h3 class="module-title "><span>Populares</span></h3><div class="module-ct"><ul class="mostread mod-list">
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="../../../index.php.html" itemprop="url">
+            <span itemprop="name">
+                Início            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="http://backup/ribamar/index.php/servidores/entrada" itemprop="url">
+            <span itemprop="name">
+                Entrada            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="../../vps2/vps-revenda.html" itemprop="url">
+            <span itemprop="name">
+                VPS Revenda            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="../../vps2/comecando.html" itemprop="url">
+            <span itemprop="name">
+                Começando o treinamento            </span>
+        </a>
+    </li>
+    <li itemscope itemtype="https://schema.org/Article">
+        <a href="../../joomla/fabrik-4-e-book.html" itemprop="url">
+            <span itemprop="name">
+                Fabrik 4 E-book e Vídeo            </span>
+        </a>
+    </li>
+</ul>
+</div></div></div>
+</div>
+</div></div>
+</div>
+
+<div id="t4-breadcrumbs" class="t4-section  t4-breadcrumbs">
+<div class="t4-section-inner container"><nav role="navigation" aria-label="Breadcrumbs">
+	<ol itemscope itemtype="https://schema.org/BreadcrumbList" class="mod-breadcrumbs breadcrumb">
+					<li>
+				Você está aqui: &#160;
+			</li>
+		
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="mod-breadcrumbs__item breadcrumb-item"><span property="item" typeof="WebPage"><a itemprop="item" href="../../../index.php.html" class="pathway"><span itemprop="name">Início</span></a></span>
+											<span class="divider"></span>
+					
+					<meta itemprop="position" content="1">
+				</li>
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="mod-breadcrumbs__item breadcrumb-item"><span property="item" typeof="WebPage"><a itemprop="item" href="../../servidores.html" class="pathway"><span itemprop="name">Servidores</span></a></span>
+											<span class="divider"></span>
+					
+					<meta itemprop="position" content="2">
+				</li>
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="mod-breadcrumbs__item breadcrumb-item"><span property="item" typeof="WebPage"><a itemprop="item" href="../vps.html" class="pathway"><span itemprop="name">vps</span></a></span>
+											<span class="divider"></span>
+					
+					<meta itemprop="position" content="3">
+				</li>
+							<li aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="mod-breadcrumbs__item breadcrumb-item active"><span itemprop="name">Servidor no DigitalOcean</span>					<meta itemprop="position" content="4">
+				</li>
+				</ol>
+</nav>
+</div>
+</div>
+
+
+
+<a href='javascript:' id='back-to-top'><i class='fa fa-chevron-up'></i></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>
